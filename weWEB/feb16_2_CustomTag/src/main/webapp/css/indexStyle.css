@@ -1,0 +1,25 @@
+@charset "EUC-KR";
+@font-face {
+  font-family : "qwer";
+  src : url(qwe.TTF);
+}
+table{
+	width: 80%;
+	margin: auto;
+	overflow: auto;
+}
+#siteTitle h1{
+	font-family: qwer;
+}
+
+#menu{
+	background-color: orange;
+	height: 50px;
+	border-radius: 10px;
+}
+#menu a{
+	margin-left: 16px;
+	color: black;
+	text-decoration: none;
+	font-family: qwer;
+}

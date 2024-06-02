@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Jur_02
+Bundle-SymbolicName: Jan_02_Function
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: Jur.02
+Bundle-RequiredExecutionEnvironment: JavaSE-17

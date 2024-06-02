@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Jan_03
+Bundle-SymbolicName: Jan_03_Condition
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: Jan.03
+Bundle-RequiredExecutionEnvironment: JavaSE-17

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	td{
+	padding: 16px;
+	border: 1px solid black;
+	}
+	table{
+		border: 1px solid black;
+	}
+</style>
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$(function(){
+		$("button").click(function aaa(){
+			// 눌러진 버튼만 색변경
+			$(this).css("background-color","red");// this를 선택자자리에 넣으면 aa콜백함수를 부른 dom객체에만 적용된다.
+			// 눌러진 버튼의 td만 노랗게
+			$(this).parent().css("background-color","yellow");// .parent() - 한단계 상위
+			//눌러진 버튼의 소속된 table의 width를 1000px로
+			$(this).closest("table").css("width","1000px");// .parent() - 한단계 상위
+			alert($(this).closest("td").find("input").val());
+			
+			
+		});
+		
+		$("td").click(function(){
+			$(this).css("background-color","green");
+			$(this).children().css("background-color","pink");// .children() - td의 하위의 모든 dom객체
+			$(this).find("input").css("color","blue");// .find() - 하위의 선택한 선택자
+		});
+	});
+</script>
+
+</head>
+<body>
+	<table>
+		<tr>
+			<td>
+				<input>
+				<button>버튼1</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input>
+				<button>버튼2</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input>
+				<button>버튼3</button>
+			</td>
+		</tr>
+		
+	</table>
+	<hr>
+	<table>
+		<tr>
+			<td>
+				<input>
+				<button>버튼1</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input>
+				<button>버튼2</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input>
+				<button>버튼3</button>
+			</td>
+		</tr>
+		
+	</table>
+</body>
+</html>

@@ -1,0 +1,74 @@
+@charset "EUC-KR";
+
+#detail{
+	width: 80%;
+	display: flex;
+	margin: auto;
+	
+}
+#detail img{
+	display: block;
+	width: 200px;
+	margin-right: 16px;
+	border-radius: 5px;
+}
+#detail #detailinfo{
+	border: 1px solid gray;
+	border-radius: 16px;
+	padding: 8px;
+}
+#detailcontext{
+	width: 80%;
+	margin :auto;
+}
+#detailcontext textarea{
+	
+	width: 100%;
+	height :auto;
+	margin :auto;
+	font-size: 20pt;
+	margin-top: 20px;
+	border : 1px solid black;
+	border-radius: 5px;
+	resize: vertical;
+}
+#fixDelete{
+	width: 80%;
+	margin: auto;
+}
+#fixDelete a{
+	color: black;
+	font-size: 10pt;
+	width: 50%;
+	border: none;
+	background: white;
+}
+#comment{
+	width: 80%;
+	margin: auto;
+}
+#comment #txt{
+	width: 80%;
+	height: 30px;
+	font-size: 25pt;
+	border:none;
+	border-bottom: 2px solid black;
+}
+#comment span{
+	cursor: pointer;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 3px;
+	
+}
+#userComment td{
+	width: 100%;
+}#userComment td div{
+	width: 80%;
+	margin: auto;
+}
+#userComment span{
+	border: none;
+	width: 30%;
+	display: inline-block;
+}

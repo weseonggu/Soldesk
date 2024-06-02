@@ -1,0 +1,10 @@
+@charset "EUC-KR";
+body{
+	background-color: #00000033;
+}
+div{
+	/*css는 모든 dom객체를 박스모델로 관리*/
+	border: red solid 3px;
+	margin: 20px;
+	padding: 50px;
+}

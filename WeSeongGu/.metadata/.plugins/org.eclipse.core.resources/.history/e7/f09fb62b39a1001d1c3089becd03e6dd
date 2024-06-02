@@ -1,0 +1,16 @@
+package com.we.jan31.main;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ShowSelect {
+
+	public void printProduct(ArrayList<Product> arr) {
+		for (Product product : arr) {
+			System.out.println(product.getName());
+			System.out.println(product.getPrice());
+		}
+	}
+	
+	
+}

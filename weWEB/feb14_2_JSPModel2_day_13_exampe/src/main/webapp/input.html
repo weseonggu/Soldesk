@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/NewFile.css">
+<script type="text/javascript" src = "js/weValidCheck.js"></script>
+<script type="text/javascript" src = "js/new.js"></script>
+</head>
+<body>
+	<form action="HomeController" onsubmit = "return check();" name="t">
+	<!-- 일부로 get방식으로 HomeController로 요청 -->
+	<table widith ="300px" height="180px">
+	<tr>
+	<td colspan="1" align="center" id ="title"><h3>단위 변환</h3></td>
+	</tr>
+	
+	<tr>
+	<td colspan="1" align="left" id = "text"><span>변환할 값</span></td>
+	</tr>
+	
+	<tr>
+	<td id = "text" align="center"> 
+		<input name="data" type="number">
+	</td>
+	</tr>
+		
+	<tr>
+	<td colspan="1" align="left" id = "text"><span>단위</span></td>
+	</tr>
+	
+	<tr>
+	<td id = "text" align="center"> 
+		<select name = "danwe" >
+    		<option value="inch">cm -> inch</option>
+    		<option value="pung">㎡ -> 평</option>
+    		<option value="f">℃ -> ℉</option>
+    		<option value="mi">km/h -> mi/h</option>
+		</select>
+	</td>
+	</tr>
+	
+	<tr>
+	<td align="center">
+		<button>변환</button>
+	</td>
+	</tr>
+	</table>
+	</form>
+</body>
+</html>
+<!-- 프론트엔드 --> 

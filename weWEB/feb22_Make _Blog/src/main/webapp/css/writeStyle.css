@@ -1,0 +1,30 @@
+@charset "EUC-KR";
+@font-face {
+    font-family: 'font1';
+    src: url(qwer.TTF);
+    font-weight: normal;
+    font-style: normal;
+}
+#write{
+	width: 80%;
+	
+	margin: auto;
+}
+#write td input {
+	width:95%;
+	height :50px; 
+	border : 2px solid black; 
+}
+#write textarea{
+	width:95%;
+	height :300px; 
+	margin: auto; 
+	resize: none;
+	border : 2px solid black; 
+}
+#write button{
+	font-size: 30pt;
+	border: none;
+	background-color: transparent;
+	font-family: font1;
+}

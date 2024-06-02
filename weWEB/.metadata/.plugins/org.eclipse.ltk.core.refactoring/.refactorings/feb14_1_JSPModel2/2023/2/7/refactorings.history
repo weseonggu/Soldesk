@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;UnitConverter.java&apos; to &apos;feb14_2_JSPModel2_day_13_exampe/src/main/java/com.we.main&apos;&#x0D;&#x0A;- Original project: &apos;feb14_1_JSPModel2&apos;&#x0D;&#x0A;- Destination element: &apos;feb14_2_JSPModel2_day_13_exampe/src/main/java/com.we.main&apos;&#x0D;&#x0A;- Original element: &apos;com.we.feb14.main.UnitConverter.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=feb14_2_JSPModel2_day_13_exampe/src\/main\/java&lt;com.we.main" element1="/src\/main\/java&lt;com.we.feb14.main{UnitConverter.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1676341673497" units="1" version="1.0"/>
+</session>

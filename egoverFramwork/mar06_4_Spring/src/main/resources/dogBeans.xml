@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="d" class="com.we.mar06sdi.Dog"><!-- 생성자로 생성 -->
+		<constructor-arg value="뽀삐"></constructor-arg>
+		<constructor-arg value="5"></constructor-arg>
+	</bean>
+	<bean id="d2" class="com.we.mar06sdi.Dog"><!-- setter로 생성 -->
+		<property name="name" value="니르"></property>
+		<property name="age" value="7"></property>
+	</bean>
+</beans>

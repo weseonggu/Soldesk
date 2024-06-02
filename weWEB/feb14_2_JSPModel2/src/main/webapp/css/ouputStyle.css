@@ -1,0 +1,33 @@
+@charset "EUC-KR";
+@font-face {
+  font-family : "qwer";
+  src : url(qwe.TTF);
+}
+tr:not(:last-of-type) td:first-child {
+	background-color: blue;
+	font-family: qwer;
+	color : white;
+	width: 20%;
+	margin: 0px;
+	padding: 0px;
+
+	
+}
+tr:first-of-type td{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+img{
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	margin-left: auto;
+	margin-right: auto;
+}
+table{
+	background-color: #dae8d5;
+	width: 300px; 
+	margin:auto;
+	border-collapse : collapse;
+	border-radius: 10px;
+}

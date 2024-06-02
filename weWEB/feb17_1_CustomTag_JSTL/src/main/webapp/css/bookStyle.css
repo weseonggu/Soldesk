@@ -1,0 +1,26 @@
+@charset "EUC-KR";
+#bookcontainer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#bookInfo:nth-child(2n){
+	background-color: #FFDAB9;
+}
+#bookInfo:nth-child(2n-1){
+	background-color: 	#00BFFF;
+}
+
+#bookInfo{
+	width:400px;
+	margin : 8px;
+	padding: 8px;
+	border-radius: 7px;
+	display: flex;
+	align-items: flex-start;
+}
+#bookInfo div p,a{
+	margin:8px;
+}

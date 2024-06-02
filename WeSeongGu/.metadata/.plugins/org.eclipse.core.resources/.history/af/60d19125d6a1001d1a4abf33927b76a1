@@ -1,0 +1,75 @@
+package com.we.main;
+
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.ArrayList;
+
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserException;
+import org.xmlpull.v1.XmlPullParserFactory;
+
+public class XmlGetData {
+	private HttpURLConnection huc;
+	private URL u;
+	private InputStream is;
+	private XmlPullParserFactory xppf;
+	private XmlPullParser xpp;
+
+	// 생성자
+	public XmlGetData() throws Exception {
+		// TODO Auto-generated constructor stub
+		String s = "http://openapi.seoul.go.kr:8088/575a4655496b636839386f58586542/xml/RealtimeCityAir/1/25/";
+		u = new URL(s);
+		huc = (HttpURLConnection) u.openConnection();
+		this.is = huc.getInputStream();
+		xppf = XmlPullParserFactory.newInstance();
+		xpp = xppf.newPullParser();
+		xpp.setInput(is, "utf-8");
+	}
+
+	public void getdata() throws Exception {
+		ArrayList<DustMeasurement> arr = new ArrayList<>();
+		int type = xpp.getEventType();
+		String t = null;
+
+		String MSRDT = null;
+		String MSRRGN_NM= null;
+		String MSRSTE_NM= null;
+		int PM10;
+		int pm25;
+		double O3;
+		String IDEX_NM= null;
+
+		while (type != XmlPullParser.END_DOCUMENT) {
+
+			if (type == XmlPullParser.START_TAG) {
+				t = xpp.getName();
+			} else if (type == XmlPullParser.TEXT) {
+				if (t.equals("MSRDT")) {
+					MSRDT = xpp.getText();
+				} else if (t.equals("MSRRGN_NM")) {
+					MSRRGN_NM = xpp.getText();
+				} else if (t.equals("MSRSTE_NM")) {
+					MSRSTE_NM = xpp.getText();
+				} else if (t.equals("PM10")) {
+					PM10 = Integer.parseInt( xpp.getText());
+				} else if (t.equals("pm25")) {
+					pm25 = Integer.parseInt( xpp.getText());
+				} else if (t.equals("O3")) {
+					O3 = Double.parseDouble(xpp.getText());
+				} else if (t.equals("IDEX_NM")) {
+					IDEX_NM = xpp.getText();
+				}
+			} else if (type == XmlPullParser.END_TAG) {
+				t = "";
+			}
+			xpp.next();// 다음 dom겍체
+			type = xpp.getEventType();
+		}
+	}
+
+	public void dchttp() {
+		huc.disconnect();
+	}
+}

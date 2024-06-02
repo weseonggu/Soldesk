@@ -1,0 +1,19 @@
+@charset "EUC-KR";
+
+#noticeBBS {
+    width: 700px;
+    box-shadow: 3px 3px 3px black;
+    border-spacing: 0px;
+    background-color: #689F38;
+    color: white;
+}
+#noticeBBS th {
+    height: 35px;
+}
+
+#noticeBBS .dataTr {
+    background-color: white;
+    color: black;
+    height: 30px;
+    cursor: pointer;
+}

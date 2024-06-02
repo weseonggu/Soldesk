@@ -1,0 +1,19 @@
+package com.we.main;
+
+import java.util.Scanner;
+
+public class V {
+	Scanner s;
+	
+	public V() {
+		s= new Scanner(System.in);
+	}
+	public int whatDo() {
+		System.out.print("뭐: ");
+		int n =s.nextInt();
+		return n;
+	}
+	public void sClose() {
+		s.close();
+	}
+}

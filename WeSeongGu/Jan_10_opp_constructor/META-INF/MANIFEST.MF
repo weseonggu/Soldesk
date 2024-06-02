@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Jan_10_opp_constructor
+Bundle-SymbolicName: Jan_10_opp_constructor
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: Jan.10.opp.constructor
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

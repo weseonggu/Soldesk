@@ -1,0 +1,28 @@
+package com.we.main;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import com.we.db.manager.DBManager;
+
+public class GetDate_M {
+	public void getDataToDB() {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		try {
+			con = DBManager.dbConnect("jdbc:oracle:thin:@192.168.0.170:1521:xe", "we", "3750");
+			String sql = "select w_MSRSTE_NM, avg(w_PM10+ w_pm25) as avg_v from FEB01_WEATHER group by w_MSRSTE_NM";
+			pstmt = con.prepareStatement(sql);
+			rs = pstmt.executeQuery();
+			while(rs.next()) {
+				System.out.println(rs.getString("w_MSRSTE_NM"));
+				System.out.println(rs.getString("avg_v"));
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

@@ -1,0 +1,36 @@
+package com.we.main;
+
+public class HomeController {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ConsoleScreen cs =new ConsoleScreen();
+		int stop =0;
+		while(true){
+			
+			stop = cs.whatDo();
+			
+			if(stop == 10) {
+				break;
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		cs.scannerClose();
+	}
+
+}

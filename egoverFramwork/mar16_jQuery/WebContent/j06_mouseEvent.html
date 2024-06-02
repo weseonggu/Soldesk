@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script
+src="https://code.jquery.com/jquery-3.6.4.js"
+integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+crossorigin="anonymous"></script>
+<script>
+    $(function(){
+        //클릭 관련
+        $("div").mousedown(function(abc){//누를때 abc: 이벤트 정보
+            $("#h21").text("mousedown"+abc.button);
+        });
+        $("div").mouseup(function(abc){//손 땔때 abc: 이벤트 정보
+            $("#h21").text("mouseup"+abc.button);
+        });
+        // 우클릭시 나오는 기본 브라우저 메뉴가 나오는데
+        // 그 메뉴가 나올때
+        // 기본적으로 액션을 했을 때 어떤 동작이 있는거때
+        $(document).contextmenu(function(){
+            return false;// true: 기본 동작 함. false: 기본 동작 막힘
+        })
+
+        $("div").mouseenter(function(){//들어 올때
+            $("#h22").text("mouseenter");
+        });
+
+        $("div").mousemove(function(E){// 움직일때
+            var x = E.pageX;
+            var y = E.pageY;
+            $("#h22").text(x+", "+y);
+            
+        });
+
+        $("div").mouseleave(function(){// 나갈때
+            $("#h22").text("mouseleave");
+        });
+        // $("html").mousemove(function(e){
+        //     var x =e.pageX+5;
+        //     var y =e.pageY+5;
+        //     $("img").css("top",y+"px");
+        //     $("img").css("left",x+"px");
+        // });
+        $("html").mouseup(function(e){
+            if(e.button==2){
+                var x = e.pageX;
+                var y = e.pageY;
+                $("table").css("left",x+"px");
+                $("table").css("top",y+"px");
+                $("table").css("opacity","1");
+                setTimeout(function(){
+                    $("table").css("opacity","0");
+                    setTimeout(function(){
+                        $("table").css("left","-100%");
+                        $("table").css("top","-100%");
+                    },400);
+                },2000);
+
+            }
+        });
+    });
+
+</script>
+<style>
+    div{
+        width: 200px;
+        height: 200px;
+        background-color: brown;
+    }
+    img{
+        position: fixed;
+    }
+
+    table{
+        position: fixed;
+        left: -100%;
+        top: -100%;
+        opacity: 0;
+        transition: opacity 0.4s ease-out;
+    }
+</style>
+</head>
+<body>
+    <img src="hero_walk_01.png">
+    <div>
+
+    </div>
+    <h2 id="h21">ㅋ</h2>
+    <h2 id="h22">ㅋ</h2>
+    <table border="1">
+        <tr>
+            <td><a href="https://www.nawe.com">네이버</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.daum.net">다음</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.google.co.kr">구글</a></td>
+        </tr>
+    </table>
+
+</body>
+</html>

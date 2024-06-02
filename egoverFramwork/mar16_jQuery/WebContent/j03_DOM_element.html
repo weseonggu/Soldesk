@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script
+  src="https://code.jquery.com/jquery-3.6.4.js"
+  integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+  crossorigin="anonymous"></script>
+
+<script>
+    $(function(){
+        $("#b1").click(function(){
+            // DOM객체 생성
+            var m =$("<marquee></marquee>").attr("behavior","alternate").text("ㅋㅋㅋㅋ");
+            // DOM객체 배치
+            $("div").append(m);// 순서대로
+            $("div").prepend(m);// 역순
+        });
+        // DOM삭제
+        $("#b2").click(function(){
+            // $("div").remove();// DOM객체 포함 전부다 삭제
+            $("div").empty();// DOM객체 안에 다 비우기
+        });
+    });
+</script>
+<style>
+    div{
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+    }
+
+</style>
+</head>
+<body>
+    <button id="b1">버튼1</button>
+    <button id="b2">버튼2</button>
+
+    <div>
+
+
+    </div>
+</body>
+</html>

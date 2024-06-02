@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$(function () {
+		var d ={name:'후추',age:2};
+		
+		var presents =[
+			{name:'키링',price:2000},
+			{name:'사탕',price:200},
+			{name:'하겐다즈',price:20000}
+		];
+/* 		// for문
+		$.each(presents,function(ii){//ii는 0 부터 시작함
+			alert(presents[ii]);
+		});
+		//for-each
+		$.each(presents,function(ii,p){
+			alert(p);
+		}); */
+		// for문+for-each
+/* 		$.each(presents,function(ii, ppp){
+			alert(ppp.name);
+			alert(presents[ii].price);
+		}); */
+		
+/* 		$(function () {
+			//html dom 객체 대상 -> xml파싱
+			$("h1").each(function(iiii,hhhh){
+				$(hhhh).css("font-size",(iiii+1)*10+"pt");
+			});
+		}); */
+		$(function() {
+			var cssAr = [
+				{color:"white",bgColor:"black"},
+				{color:"yellow",bgColor:"red"},
+				{color:"green",bgColor:"blue"}
+			];
+			$("div").each(function(i,d){
+					$(d).css("color",cssAr[i].color).css("background-color",cssAr[i].bgColor);
+			});
+			
+		});
+	});
+</script>
+</head>
+<body>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+
+</body>
+</html>

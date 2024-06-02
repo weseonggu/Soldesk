@@ -1,0 +1,28 @@
+package com.we.main;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import com.we.db.manager.DBManager;
+
+public class InsertDustDataToDB {
+	public void insertData() {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		try {
+			con = DBManager.dbConnect("jdbc:oracle:thin:@192.168.0.170:1521:xe", "we", "3750");
+			String sql = "insert into feb01_weather values"
+					+ "(to_date(?,'YYYYMMDDHH24MI'),?,?,?,?,?,?)";
+		
+		
+		
+		
+		
+		
+		
+		
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

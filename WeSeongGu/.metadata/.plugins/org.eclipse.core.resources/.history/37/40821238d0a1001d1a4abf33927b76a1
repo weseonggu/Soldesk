@@ -1,0 +1,10 @@
+create table feb01_weather(
+	w_date date not null,
+	w_MSRRGN_NM varchar2(5 char) not null,
+	w_MSRSTE_NM varchar2(5 char) not null,
+	w_PM10 number(4) not null,
+	w_pm25 number(4) not null,
+	w_IDEX_NM varchar2(5 char)not null
+);
+
+drop table feb01_weather;

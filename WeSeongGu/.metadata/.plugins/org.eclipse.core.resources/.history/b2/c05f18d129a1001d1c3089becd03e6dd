@@ -1,0 +1,23 @@
+package com.we.jan31.main;
+
+import java.util.Scanner;
+
+public class Search {
+	Scanner what = null;
+	
+	public Search() {
+		what = new Scanner(System.in);
+	}
+	
+	public void input_info() {
+		System.out.print("휴개소 이름: ");
+		System.out.print("방향: ");
+		System.out.print("위치: ");
+		System.out.print("주차 대수: ");
+	}
+	
+	public void killsc() {
+		what.close();
+	}
+	
+}

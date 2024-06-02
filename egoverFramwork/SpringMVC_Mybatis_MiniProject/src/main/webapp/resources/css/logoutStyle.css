@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+#logoutPage {
+	float: right;
+	margin-right: 16px;
+	display: inline-block;
+}
+
+#logoutPage img {
+	height: 70px;
+	display: block;
+	border-right: 8px;
+}
+#logoutPage button{
+	border: none;
+	font-family: font;
+	background-color: #9fef65;
+	margin-bottom: 5px;
+}
+#logoutPage p{
+	font-family: font;
+	
+}
+#menuTable{
+	float: left;
+	margin-left: 32px;
+}
+#menuTable img{
+	height: 20px;
+	margin-right: 15px;
+}

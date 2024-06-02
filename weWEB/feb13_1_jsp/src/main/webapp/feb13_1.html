@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/NewFile.css">
+<script type="text/javascript" src = "js/weValidCheck.js"></script>
+<script type="text/javascript" src = "js/feb13_1.js"></script>
+<script type="text/javascript">
+	function go(){
+		var x = document.getElementById("xx1");
+		var y = document.getElementById("yy1");
+		if(isEmpty(x)){
+			alert("x를쓰시오");
+		}else{
+			location.href = "Servlet?xx="+x.value
+					+"&yy="+y.value;//페이지 이동
+		}
+	}
+
+</script>
+
+
+</head>
+<body>
+	<a href = "g?xx=10&yyy=5">10,5로</a>
+	<hr>
+	x: <input id = "xx1"><br>
+	y: <input id = "yy1"><br>
+	<button ondblclick="go();">버튼</button>
+	<hr>
+
+	<form name="fff" onsubmit = "return check();" action="output.jsp">
+	
+		x: <input name = "xx"><br>
+		y: <input name = "yy"><br>
+		<button>버튼</button>
+	
+	</form>
+</body>
+</html>

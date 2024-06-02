@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<script>
+    $(function(){
+        var paper = document.getElementById("p");// canvas는 최신이라 $()이게 잘 안먹힘
+        var pen = paper.getContext("2d");
+        pen.fillRect(10,20,30,40);//x,y,가로,세로 
+
+        pen.fillStyle = "#ff0000";
+        pen.fillRect(100,200,30,40);
+        var canvasOffset = $("#p").offset();
+        $("#p").mouseup(function(e){
+            var x =e.pageX - canvasOffset.left-1-15;
+            var y =e.pageY - canvasOffset.top-1-20;
+            pen.fillRect(x,y,30,40);
+        });
+
+        
+    });
+</script>
+<style>
+    #p{
+        border: 1px solid black;
+    }
+</style>
+</head>
+
+<body>
+    <!-- html5가 추구 하는거 : add-on 없이 html 만으로 구현
+        웹 페이지에 그래픽 그리려면 :flash 였는데 canvas로 대체
+        canvas는 css로 사이즈 조정하면 안의 이미지로 같이 커짐
+    -->
+
+    <canvas id ="p" width="300px" height="600px"></canvas>
+</body>
+</html>

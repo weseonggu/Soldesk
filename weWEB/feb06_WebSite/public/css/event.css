@@ -1,0 +1,17 @@
+@charset "EUC-KR";
+
+.anEvent {
+    margin-bottom: 20px;
+    width: 800px;
+    height: 150px;
+    border: #673AB7 solid 3px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #673ab7 inset;
+}
+.anEvent .imgTd {
+    width: 90px;
+}
+.anEvent .writerTd {
+    color: #673AB7;
+    font-weight: 900;
+}

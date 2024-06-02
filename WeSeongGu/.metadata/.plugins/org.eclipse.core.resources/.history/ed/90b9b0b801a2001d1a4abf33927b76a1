@@ -1,0 +1,23 @@
+package com.we.main;
+
+import java.util.Scanner;
+
+public class V {
+	private Scanner s;
+	
+	public V() {
+		s= new Scanner(System.in);
+	}
+	public int whatDo() {
+		System.out.println("1. 편의점 등록");
+		System.out.println("2. 물건 등록");
+		System.out.println("3. 물건 조회");
+		System.out.println("10. 종료");
+		System.out.print("뭐: ");
+		int n =s.nextInt();
+		return n;
+	}
+	public void scannerClose() {
+		s.close();
+	}
+}

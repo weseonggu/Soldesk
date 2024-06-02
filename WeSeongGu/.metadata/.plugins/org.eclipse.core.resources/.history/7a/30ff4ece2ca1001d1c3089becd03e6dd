@@ -1,0 +1,54 @@
+package com.we.jan31.main;
+
+public class SendInfo {
+	private String n;
+	private String d;
+	private String l;
+	private String p;
+	
+	public SendInfo() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public SendInfo(String n, String d, String l, String p) {
+		super();
+		this.n = n;
+		this.d = d;
+		this.l = l;
+		this.p = p;
+	}
+
+	public String getN() {
+		return n;
+	}
+
+	public void setN(String n) {
+		this.n = n;
+	}
+
+	public String getD() {
+		return d;
+	}
+
+	public void setD(String d) {
+		this.d = d;
+	}
+
+	public String getL() {
+		return l;
+	}
+
+	public void setL(String l) {
+		this.l = l;
+	}
+
+	public String getP() {
+		return p;
+	}
+
+	public void setP(String p) {
+		this.p = p;
+	}
+	
+	
+}

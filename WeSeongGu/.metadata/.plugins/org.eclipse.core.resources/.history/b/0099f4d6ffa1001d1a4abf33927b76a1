@@ -1,0 +1,35 @@
+create sequence convenience_store_seq;
+
+create table convenience_store(
+	c_no  number(2) primary key,
+	c_brand varchar2 (7 char ) not null,
+	c_jijum varchar2(5 char ) not null,
+	c_location varchar2(10 char) not null
+);
+
+insert into convenience_store values(convenience_store_seq.nextval,'gs25','수락점','슈락산123');
+insert into convenience_store values(convenience_store_seq.nextval,'cu','노원점','노원123');
+insert into convenience_store values(convenience_store_seq.nextval,'gs25','잠실점','잠실123');
+insert into convenience_store values(convenience_store_seq.nextval,'7','홍대점','홍대123');
+insert into convenience_store values(convenience_store_seq.nextval,'cu','강대점','강대123');
+
+select * from convenience_store;
+
+create sequence store_product_seq;
+
+create table store_product(
+	s_no number(3) primary key,
+	s_exp date not null,
+	s_name varchar2(10 char) not null,
+	s_price number(4) not null,
+	s_c_no number(2) not null,    
+	CONSTRAINT convenience_store
+        FOREIGN key (s_c_no) references convenience_store(c_no)
+        on delete cascade
+); 
+
+
+
+
+
+

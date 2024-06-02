@@ -1,0 +1,43 @@
+package com.we.needclass;
+
+public class StoreData {
+	private String brand;
+	private String jijum;
+	private String loction;
+	
+	public StoreData() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public StoreData(String brand, String jijum, String loction) {
+		super();
+		this.brand = brand;
+		this.jijum = jijum;
+		this.loction = loction;
+	}
+
+	public String getBrand() {
+		return brand;
+	}
+
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+	public String getJijum() {
+		return jijum;
+	}
+
+	public void setJijum(String jijum) {
+		this.jijum = jijum;
+	}
+
+	public String getLoction() {
+		return loction;
+	}
+
+	public void setLoction(String loction) {
+		this.loction = loction;
+	}
+	
+}

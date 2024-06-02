@@ -1,0 +1,30 @@
+package com.we.main;
+
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserFactory;
+
+public class GDMain {
+	//http://openapi.seoul.go.kr:8088/575a4655496b636839386f58586542/xml/RealtimeCityAir/1/25/
+
+	public static void main(String[] args) {
+		HttpURLConnection huc = null;
+		
+		try {
+			String s = "http://openapi.seoul.go.kr:8088/575a4655496b636839386f58586542/xml/RealtimeCityAir/1/25/";
+			URL u = new URL(s);
+			
+			huc = (HttpURLConnection) u.openConnection();
+			InputStream is = huc.getInputStream();
+			XmlPullParserFactory xppf = XmlPullParserFactory.newInstance();
+			XmlPullParser xpp = xppf.newPullParser();
+			xpp.setInput(is, "utf-8");
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

@@ -1,0 +1,25 @@
+package com.we.jan31.main;
+// DAO/DTO패턴
+// DAO data Acess object :db관련 작업하는 M
+// DTO: DAO에서 작업하고 결과를 DTO로 받는다
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import com.we.db.manager.DBManager;
+
+public class Back {
+
+
+	public static void reg(SendInfo ra) {
+		Connection con= null;
+		PreparedStatement pstmt = null;
+		
+		try {
+			con = DBManager.dbConnect("jdbc:oracle:thin:@192.168.0.170:1521:xe", "we", "3750");
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		DBManager.dbClosed(con, pstmt, null);
+	}
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.aaa{
+		color:red;
+		background-color: black;
+	}
+</style>
+<script
+  src="https://code.jquery.com/jquery-3.6.4.js"
+  integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+  crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  	$(function(){
+		$("#b1").click(function(){
+			$("a").attr("href","https://www.daum.net");// 속성 값 수정
+		});
+		$("#b2").click(function(){
+			$("a").attr("class","aaa");
+		});
+		var i =0;
+		setInterval(function(){
+			i++;
+			if(i==6){
+				i=1;
+			}
+			$("img").attr("src","hero_walk_0"+i+".png");
+		},1);
+		
+		$("#b3").click(function(){
+			//속성 삭제
+			$("a").removeAttr("href");
+		});
+		$("#b4").click(function(){
+			//속성 가져오기
+			var h = $("a").attr("href");
+			alert(h);
+		});
+  	});
+  </script>
+</head>
+<body>
+	<img>
+	<a href="https://www.naver.com">네이버</a>
+	<hr>
+	<button id = "b1">버튼1</button><br>
+	<button id = "b2">버튼2</button><br>
+	<button id = "b3">버튼3</button><br>
+	<button id = "b4">버튼4</button><br>
+</body>
+</html>

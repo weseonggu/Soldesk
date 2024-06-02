@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SpringMVC_Mybatis_MiniProject/src/main/webapp/resources/js/JQuery.js&apos; to &apos;WebSite_jQuery.js&apos;" description="Rename resource &apos;JQuery.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/resources/js/JQuery.js" name="WebSite_jQuery.js" stamp="1678857431479" updateReferences="true"/>
+</session>

@@ -1,0 +1,35 @@
+package com.we.jan31.main;
+
+import java.util.Scanner;
+
+public class Search {
+	Scanner what = null;
+	
+	public Search() {
+		what = new Scanner(System.in);
+	}
+	
+	public SendInfo input_info() {
+		System.out.print("휴개소 이름: ");
+		String n =what.next();
+		System.out.print("방향: ");
+		String d =what.next();
+		System.out.print("위치: ");
+		String l =what.next();
+		System.out.print("주차 대수: ");
+		String p =what.next();
+		try {
+			int check = Integer.parseInt(p);
+			return new SendInfo(n, d, l, check);
+		} catch (Exception e) {
+			System.out.println("주차 대수 잘못입력함");
+			input_info();
+		}
+		
+	}
+	
+	public void killsc() {
+		what.close();
+	}
+	
+}

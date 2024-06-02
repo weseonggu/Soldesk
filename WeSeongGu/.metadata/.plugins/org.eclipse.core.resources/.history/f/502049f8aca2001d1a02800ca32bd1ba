@@ -1,0 +1,50 @@
+package com.we.main;
+
+public class HomeController {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ConsoleScreen cs =new ConsoleScreen();
+		int num =0;
+		while(true){
+			
+			num = cs.whatDo();
+			
+			if(num == 10) {
+				break;
+			}else if(num==1) {
+				
+				String s=DAO.getCdho().insertCVS(cs.showRegCVSMenu());
+				cs.sf(s);
+			}else if(num==2) {
+				Product p = cs.showProduct(DAO.getCdho().cvsNum());
+				String s=DAO.getCdho().insertProduct(p);
+				cs.sf(s);
+			}else if(num == 3) {
+				int p = DAO.getCdho().getAllPage();
+				cs.showSearch(DAO.getCdho().selectAll());
+			}else if(num == 4) {
+				
+			}
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		cs.scannerClose();
+	}
+
+}

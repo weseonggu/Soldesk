@@ -1,0 +1,42 @@
+package com.we.main;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import com.we.db.manager.DBManager;
+
+public class SnackDAO {
+	
+	private static final SnackDAO adao =new SnackDAO();
+	
+	private SnackDAO() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static SnackDAO getAdao() {
+		return adao;
+	}
+	public String insertProduct(Product p) {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		try {
+			con = DBManager.dbConnect(dbAddr, id, pw);
+			String sql = "insert into store_product values (store_product_seq.nextval, to_date(?,'YYYY-MM-DD'), ?, ?, ?)";
+			pstmt= con.prepareStatement(sql);
+			pstmt.setString(1, p.getExp());
+			pstmt.setString(2, p.getName());
+			pstmt.setInt(3, p.getPrice());
+			pstmt.setInt(3, p.getCvs());
+			
+			if(pstmt.executeUpdate()==1) {
+				return "성공";
+			}
+			return null;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return "실패";
+		}finally {
+			DBManager.dbClosed(con, pstmt, null);
+		}
+	}
+}

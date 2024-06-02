@@ -1,0 +1,42 @@
+package com.we.jan30.main;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class InsertMain {
+	public static void main(String[] args) {
+		String addr = "jdbc:oracle:thin:@192.168.0.170:1521:xe";
+		Scanner k = new Scanner(System.in);
+
+		Connection con = null;
+		try {
+			// 연결-------------------------------------------------------
+			con = DriverManager.getConnection(addr, "we", "3750");
+			System.out.println("연결 성공");
+			// 데이터 -----------------------------------------------------
+			System.out.print("휴개소이름: ");
+			String n =k.next();
+			System.out.println("방향: ");
+			String s= k.next();
+			System.out.println("위치: ");
+			String w = k.next();
+			System.out.println("주차 대수: ");
+			int p = k.nextInt();
+			
+			// sql---------------------------------------------------------
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		k.close();
+		try {
+			con.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

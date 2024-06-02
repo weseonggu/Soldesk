@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.we.jan12_01.market.food&apos; to &apos;Food&apos;&#x0D;&#x0A;- Original project: &apos;Jan_12_oop_polymorphism&apos;&#x0D;&#x0A;- Original element: &apos;com.we.jan12_01.market.food&apos;&#x0D;&#x0A;- Renamed element: &apos;com.we.jan12_01.market.Food&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;food&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.we.jan12_01.market{food.java[food" matchStrategy="1" name="Food" qualified="false" references="true" similarDeclarations="false" stamp="1673482510324" textual="false" version="1.0"/>
+</session>

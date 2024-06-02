@@ -1,0 +1,54 @@
+package com.we.main;
+
+public class Product {
+	private String exp;
+	private String name;
+	private int price;
+	private int cvs;
+	
+	public Product() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Product(String exp, String name, int price, int cvs) {
+		super();
+		this.exp = exp;
+		this.name = name;
+		this.price = price;
+		this.cvs = cvs;
+	}
+
+	public String getExp() {
+		return exp;
+	}
+
+	public void setExp(String exp) {
+		this.exp = exp;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	public int getCvs() {
+		return cvs;
+	}
+
+	public void setCvs(int cvs) {
+		this.cvs = cvs;
+	}
+	
+	
+}

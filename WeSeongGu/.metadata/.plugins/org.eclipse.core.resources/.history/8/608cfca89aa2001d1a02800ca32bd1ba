@@ -1,0 +1,47 @@
+package com.we.main;
+
+public class HomeController {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ConsoleScreen cs =new ConsoleScreen();
+		int num =0;
+		while(true){
+			
+			num = cs.whatDo();
+			
+			if(num == 10) {
+				break;
+			}else if(num==1) {
+				
+				String s=CVSDAO.getCdho().insertCVS(cs.showRegCVSMenu());
+				cs.sf(s);
+			}else if(num==2) {
+				Product p = cs.showProduct(CVSDAO.getCdho().cvsNum());
+				String s=SnackDAO.getAdao().insertProduct(p);
+				cs.sf(s);
+			}else if(num == 3) {
+				
+			}
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		cs.scannerClose();
+	}
+
+}

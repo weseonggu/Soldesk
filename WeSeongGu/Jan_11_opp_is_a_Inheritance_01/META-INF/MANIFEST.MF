@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Jan_11_opp_is_a
+Bundle-SymbolicName: Jan_11_opp_is_a_Inheritance_01
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: Jan.11.opp.is.a
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

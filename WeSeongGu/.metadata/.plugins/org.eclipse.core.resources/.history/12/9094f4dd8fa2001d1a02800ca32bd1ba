@@ -1,0 +1,47 @@
+package com.we.main;
+
+import com.we.needclass.StoreData;
+
+public class HomeController {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ConsoleScreen cs =new ConsoleScreen();
+		int num =0;
+		while(true){
+			
+			num = cs.whatDo();
+			
+			if(num == 10) {
+				break;
+			}else if(num==1) {
+				M.insertCVS(cs.showRegCVSMenu());
+			}else if(num==2) {
+				// 편의점 번호 정보 추가
+				M.cvsNum();
+				cs.showProduct();
+			}else if(num == 3) {
+				
+			}
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		cs.scannerClose();
+	}
+
+}

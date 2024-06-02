@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script
+src="https://code.jquery.com/jquery-3.6.4.js"
+integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+crossorigin="anonymous"></script>
+<script>
+    $(function(){
+    	// 이벤트 물려주기
+        $(document).on("click","button",function(){
+            var b = $("<button></button>").text("버튼");
+            $("body").append(b);
+        });
+    });
+    	// 이벤트 물려주기(파라메타가 필요한경우)
+        function addbtn() {
+            var b = $("<button></button>").attr("onclick","addbtn();").text("버튼");
+            $("body").append(b);
+		}
+</script>
+</head>
+<body>
+    <button>버튼</button>
+    <hr>
+    
+    
+    
+    <button onclick="addbtn();">버튼</button>
+</body>
+</html>

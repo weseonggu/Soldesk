@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+	<bean id = "dog" class="com.we.mar06sdi.Dog">
+		<constructor-arg value="라이"></constructor-arg>
+		<constructor-arg value="9"></constructor-arg>
+	</bean>
+	
+	<bean id ="human" class= "com.we.mar06sdi.Human">
+		<constructor-arg value="홍길동"></constructor-arg>
+		<constructor-arg value="20"></constructor-arg>
+		<constructor-arg ref="dog"></constructor-arg>
+		<constructor-arg name="nickname"><!-- 배열 -->
+			<list value-type="java.lang.String">
+				<value>까치</value>
+				<value>호박</value>
+				<value>아리수</value>
+				<value>신박</value>
+				<value>ㅇㅇ</value>
+			</list>
+		</constructor-arg>
+		<constructor-arg name="friends"><!-- ArrayList value-type 기본형은 생략 가능-->
+			<list>
+				<value>김길동</value>
+				<value>이길동</value>
+			</list>
+		</constructor-arg>
+		<constructor-arg name="stats">
+			<map key-type="java.lang.String" value-type="java.lang.Double">
+				<entry key="키" value="180"></entry>
+				<entry key="몸무게" value="80"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+	<bean id="g" class="com.we.mar06sdi.Gejang" ></bean>
+	<context:annotation-config></context:annotation-config>
+	
+	
+	
+</beans>

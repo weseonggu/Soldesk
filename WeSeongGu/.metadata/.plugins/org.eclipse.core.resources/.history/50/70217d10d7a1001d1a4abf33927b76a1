@@ -1,0 +1,20 @@
+package com.we.main;
+
+import java.util.ArrayList;
+
+public class GDMain {
+	//http://openapi.seoul.go.kr:8088/575a4655496b636839386f58586542/xml/RealtimeCityAir/1/25/
+
+	public static void main(String[] args) {
+		ArrayList<DustMeasurement> arr = null;
+		try {
+			XmlGetData xdg = new XmlGetData();
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+}

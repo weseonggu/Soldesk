@@ -1,0 +1,11 @@
+@charset "EUC-KR";
+#lotto{
+	margin: auto;
+	width:auto;
+	overflow: auto;
+	text-align: center;
+}
+#lotto div{
+	margin: auto;
+	display: inline-block;
+}

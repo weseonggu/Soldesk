@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Jan_09_ThisisJava
+Bundle-SymbolicName: Jan_09_ThisisJava
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: Jan.09.ThisisJava
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

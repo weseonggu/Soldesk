@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+function check(){
+	// document: 이html
+	var idBox = document.fff.id;
+	var pwBow = documnt.fff.pw;
+	var pwChkBow = documnt.fff.pwChk;
+	//idBox.value; 콘텐츠 내용
+	if(!idBox.value){
+		alert("id를 입력하시오");
+		//idBox.focus();
+		return false;
+	}
+ 	if(!pwBox.value){
+		alert("pw를 입력하시오");
+		pwBox.focus();
+		return false;
+	}
+	
+	if (pwBox.value.length <5){
+		alert("pw좀더 길게");
+		pwBox.focus();
+		return false;
+	}
+	if(pwBox.value != pwChk.value){
+		alert("pw다름");
+		pwBox.focus;
+		return false;
+	}
+	//id에 한글,특수문자 : 해도됨 개발자가 작업량이 폭등함
+
+}
+</script>
+</head>
+<body>
+<!-- 
+onsubmit 
+ 요청시 ture면 요청 보냄
+ false면 요청 안보냄 
+ -->
+	<form name="fff" onsubmit="return check();" action = "이쪽으로 요청" >
+		id: <input name="id" maxlength="10" autofocus="autofocus"><br>
+		passward: <input name="pw" maxlength="10" type="password"><br>
+		passward확인: <input name="pwChk" maxlength="10" type = "password"><br>
+		<button>이거 누르면</button>
+	</form>
+</body>
+</html>

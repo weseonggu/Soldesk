@@ -1,0 +1,57 @@
+package com.we.main;
+
+import java.util.Scanner;
+
+import com.we.needclass.Product;
+
+public class HomeController {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ConsoleScreen cs =new ConsoleScreen();
+		Scanner sc = new Scanner(System.in);
+		int num =0;
+		
+		while(true){
+			
+			num = cs.whatDo();
+			
+			if(num == 10) {
+				break;
+			}else if(num==1) {
+				
+				String s=DAO.getCdho().insertCVS(cs.showRegCVSMenu());
+				cs.sf(s);
+			}else if(num==2) {
+				Product p = cs.showProduct(DAO.getCdho().cvsNum());
+				String s=DAO.getCdho().insertProduct(p);
+				cs.sf(s);
+			}else if(num == 3) {
+				int pageNum = cs.getPage(DAO.getCdho().getAllPage());
+				cs.showSearch(DAO.getCdho().selectAll(pageNum));
+			}else if(num == 4) {
+				int pageNum = cs.getPage(DAO.getCdho().getAllPage());
+				cs.showSearch(DAO.getCdho().selectSnack2(pageNum));
+			}
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		cs.scannerClose();
+	}
+
+}

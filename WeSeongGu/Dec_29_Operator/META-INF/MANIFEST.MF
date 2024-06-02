@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Dec_29
+Bundle-SymbolicName: Dec_29_Operator
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: Dec.29
+Bundle-RequiredExecutionEnvironment: JavaSE-17

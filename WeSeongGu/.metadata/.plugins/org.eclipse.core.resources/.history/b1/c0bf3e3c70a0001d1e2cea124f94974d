@@ -1,0 +1,53 @@
+package com.we.jan30.main;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.util.Scanner;
+
+public class UpdateMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String addr = "jdbc:oracle:thin:@192.168.0.170:1521:xe";
+		Scanner k = new Scanner(System.in);
+
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		try {
+			// 연결-------------------------------------------------------
+			con = DriverManager.getConnection(addr, "we", "3750");
+			System.out.println("연결 성공");
+			// 데이터 -----------------------------------------------------
+			System.out.print("휴개소이름: ");
+			String n =k.next();
+			System.out.print("주차 대수: ");
+			int p = k.nextInt();
+			
+
+			String sql = "update jan30_restarea "
+					+ "set r_park = ? "
+					+ "where r_name like '%?%'";
+			
+
+			pstmt = con.prepareStatement(sql);
+			
+
+			pstmt.setString(1, n);
+			pstmt.setInt(2, p);
+			
+
+			int row = pstmt.executeUpdate();
+			if(row == 1) {
+				System.out.println("등록 성공");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		try { pstmt.close(); } catch (Exception e1) {}
+		try {con.close();} catch (Exception e) {}
+		k.close();
+	}
+
+}

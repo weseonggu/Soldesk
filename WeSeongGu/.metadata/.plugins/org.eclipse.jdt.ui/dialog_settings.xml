@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="SortMembers.sort_all" value="false"/>
+	<item key="org.eclipse.jdt.ui.lastextjar" value="D:\db"/>
+	<item key="org.eclipse.jdt.ui.last.selected.jre.kind2" value="2"/>
+	<item key="org.eclipse.jdt.ui.last.selected.execution.enviroment" value="JavaSE-1.8"/>
+	<section name="JavaElementSearchActions">
+	</section>
+	<section name="OptionalMessageDialog.hide.">
+		<item key="org.eclipse.jdt.ui.typecomment.deprecated" value="true"/>
+		<item key="RunnableJar.export.ipwarning" value="true"/>
+	</section>
+	<section name="NewClassWizardPage">
+		<item key="create_constructor" value="false"/>
+		<item key="create_unimplemented" value="false"/>
+	</section>
+	<section name="completion_proposal_size">
+		<item key="size.x" value="428"/>
+		<item key="size.y" value="263"/>
+		<item key="contextSelector.size.x" value="331"/>
+		<item key="contextSelector.size.y" value="221"/>
+	</section>
+	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="FatJarPackageWizard">
+		<item key="FatJarPackageWizardPage.ANTSCRIPT_SAVE" value="false"/>
+		<item key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION" value="D:\WeSeongGu"/>
+		<item key="FatJarPackageWizardPage.LIBRARY_HANDLING" value="1"/>
+		<item key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME" value="GDMain - Feb_1_GetData"/>
+		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="D:\javaRunFile\fine_dust.jar"/>
+		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="D:\javaRunFile\fine_dust.jar"/>
+			<item value="C:\Users\sdedu\Desktop\test.jar"/>
+			<item value="C:\Users\sdedu\Desktop\card.jar"/>
+			<item value="card.jar"/>
+		</list>
+		<list key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION_HISTORY">
+			<item value="D:\WeSeongGu.xml"/>
+			<item value=".xml"/>
+		</list>
+	</section>
+	<section name="RenameInformationPopup">
+	</section>
+	<section name="RefactoringWizard.preview">
+		<item key="width" value="600"/>
+		<item key="height" value="400"/>
+	</section>
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+		<item key="updateSimilarElements" value="false"/>
+		<item key="updateSimilarElementsMatchStrategy" value="1"/>
+		<item key="updateTextualMatches" value="false"/>
+		<item key="renameSubpackages" value="false"/>
+		<item key="updateQualifiedNames" value="false"/>
+		<item key="patterns" value="*"/>
+	</section>
+	<section name="BuildPathsPropertyPage">
+		<item key="pageIndex" value="2"/>
+	</section>
+	<section name="JarPackageWizard">
+		<item key="JarPackageWizardPage.EXPORT_CLASS_FILES" value="true"/>
+		<item key="JarPackageWizardPage.EXPORT_OUTPUT_FOLDER" value="false"/>
+		<item key="JarPackageWizardPage.EXPORT_JAVA_FILES" value="false"/>
+		<item key="JarPackageWizardPage.REFACTORINGS" value="false"/>
+		<item key="JarPackageWizardPage.COMPRESS" value="true"/>
+		<item key="JarPackageWizardPage.INCLUDE_DIRECTORY_ENTRIES" value="false"/>
+		<item key="JarPackageWizardPage.OVERWRITE" value="false"/>
+		<item key="jarOptionsWizardPage.EXPORT_WARNINGS" value="true"/>
+		<item key="jarOptionsWizardPage.EXPORT_ERRORS" value="true"/>
+		<item key="jarOptionsWizardPage.STORE_USE_SRC_FOLDERS" value="false"/>
+		<item key="jarOptionsWizardPage.BUILD_IF_NEEDED" value="true"/>
+		<item key="jarOptionsWizardPage.SAVE_DESCRIPTION" value="false"/>
+		<item key="jarOptionsWizardPage.DESCRIPTION_LOCATION" value=""/>
+		<item key="JarManifestWizardPage.GENERATE_MANIFEST" value="true"/>
+		<item key="JarManifestWizardPage.SAVE_MANIFEST" value="false"/>
+		<item key="JarManifestWizardPage.REUSE_MANIFEST" value="false"/>
+		<item key="JarManifestWizardPage.MANIFEST_LOCATION" value=""/>
+		<item key="JarManifestWizardPage.SEAL_JAR" value="false"/>
+		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="C:\Users\sdedu\Desktop\DB_Manager_AOP_JAR\DBManager.jar"/>
+			<item value="C:\Users\sdedu\Desktop\ironman_v1.0.jar"/>
+			<item value="C:\Users\sdedu\Desktop\Ironman\Jan_09.jar"/>
+			<item value="D:\javaRunFile\Jan_09.jar"/>
+			<item value="D:\javaRunFile\qwer.jar"/>
+		</list>
+	</section>
+	<section name="JavadocWizardDialog">
+		<item key="DIALOG_X_ORIGIN" value="495"/>
+		<item key="DIALOG_Y_ORIGIN" value="150"/>
+		<item key="DIALOG_WIDTH" value="946"/>
+		<item key="DIALOG_HEIGHT" value="567"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="javadoc">
+		<item key="javadoc_command_history" value="C:\Program Files\ojdkbuild\java-1.8.0-openjdk-1.8.0.332-1\bin\javadoc.exe;C:\Users\sdedu\Desktop\java-1.8.0-openjdk-1.8.0.332-1.b09.ojdkbuild.windows.x86_64\java-1.8.0-openjdk-1.8.0.332-1.b09.ojdkbuild.windows.x86_64\bin\javadoc.exe;C:\Users\sdedu\Desktop\DB_Manager_AOP_JAR\javadoc.exe;C:\Users\sdedu\Desktop\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933\jre\bin\javadoc.exe"/>
+		<item key="fromStandard" value="true"/>
+		<item key="docletname" value=""/>
+		<item key="docletpath" value=""/>
+		<item key="access" value="public"/>
+		<item key="use" value="true"/>
+		<item key="author" value="true"/>
+		<item key="version" value="true"/>
+		<item key="nodeprecated" value="false"/>
+		<item key="nodeprecatedlist" value="false"/>
+		<item key="splitindex" value="true"/>
+		<item key="noindex" value="false"/>
+		<item key="notree" value="false"/>
+		<item key="nonavbar" value="false"/>
+		<item key="openinbrowser" value="false"/>
+		<item key="source" value="1.8"/>
+		<item key="antpath" value="D:\WeSeongGu\jan_30_db\javadoc.xml"/>
+		<item key="destdir" value="C:\Users\sdedu\Desktop\DB_Manager_AOP_JAR"/>
+		<section name="projects">
+			<section name="Jan_05_Array">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_05_Array\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_05_Array\javadoc.xml"/>
+			</section>
+			<section name="Jan_10_opp_constructor">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_10_opp_constructor\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_10_opp_constructor\javadoc.xml"/>
+			</section>
+			<section name="Jan_13_thisidjava">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_13_thisidjava\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_13_thisidjava\javadoc.xml"/>
+			</section>
+			<section name="Jan_12_ThisIsJava">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\newironman"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_12_ThisIsJava\javadoc.xml"/>
+			</section>
+			<section name="Jan_11_practice">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_11_practice\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_11_practice\javadoc.xml"/>
+			</section>
+			<section name="Jan_12_opp_abstract">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_12_opp_abstract\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_12_opp_abstract\javadoc.xml"/>
+			</section>
+			<section name="Jan_03_Condition">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_03_Condition\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_03_Condition\javadoc.xml"/>
+			</section>
+			<section name="Jan_09_ThisisJava">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_09_ThisisJava\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_09_ThisisJava\javadoc.xml"/>
+			</section>
+			<section name="Jan_13_GUI">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_13_GUI\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_13_GUI\javadoc.xml"/>
+			</section>
+			<section name="Jan_12_oop_PatternProgramming">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_12_oop_PatternProgramming\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_12_oop_PatternProgramming\javadoc.xml"/>
+			</section>
+			<section name="Jan_18_usefulClass_HTTP">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_18_usefulClass_HTTP\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_18_usefulClass_HTTP\javadoc.xml"/>
+			</section>
+			<section name="Jan_20_usefulClass_Collection">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_20_usefulClass_Collection\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_20_usefulClass_Collection\javadoc.xml"/>
+			</section>
+			<section name="Jan_31_2_OOP_PatternProgramming">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_31_2_OOP_PatternProgramming\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_31_2_OOP_PatternProgramming\javadoc.xml"/>
+			</section>
+			<section name="Jan_25">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_25\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_25\javadoc.xml"/>
+			</section>
+			<section name="Jan_17_2_usefulCLass_HTTP">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_17_2_usefulCLass_HTTP\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_17_2_usefulCLass_HTTP\javadoc.xml"/>
+			</section>
+			<section name="Jan_06_OOP">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_06_OOP\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_06_OOP\javadoc.xml"/>
+			</section>
+			<section name="Dec_29_Operator">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Dec_29_Operator\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Dec_29_Operator\javadoc.xml"/>
+			</section>
+			<section name="Jan_27_DB">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_27_DB\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_27_DB\javadoc.xml"/>
+			</section>
+			<section name="Jan_17_1_usefulClass_HTTP">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_17_1_usefulClass_HTTP\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_17_1_usefulClass_HTTP\javadoc.xml"/>
+			</section>
+			<section name="Jan_20_1_uselessClass_SocketServer">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_20_1_uselessClass_SocketServer\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_20_1_uselessClass_SocketServer\javadoc.xml"/>
+			</section>
+			<section name="Jan_16_usefulClass_IO">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_16_usefulClass_IO\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_16_usefulClass_IO\javadoc.xml"/>
+			</section>
+			<section name="Jan_11_opp_is_a_Inheritance_01">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_11_opp_is_a_Inheritance_01\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_11_opp_is_a_Inheritance_01\javadoc.xml"/>
+			</section>
+			<section name="Jan_11_oop_package_import">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_11_oop_package_import\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_11_oop_package_import\javadoc.xml"/>
+			</section>
+			<section name="Jan_09_OMain">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\javaRunFile\use advice"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_09_OMain\javadoc.xml"/>
+			</section>
+			<section name="Jan_10_has_a">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\Jan_10_has_a\doc"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Jan_10_has_a\javadoc.xml"/>
+			</section>
+			<section name="Jan_12_oop_polymorphism">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_12_oop_polymorphism\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_12_oop_polymorphism\javadoc.xml"/>
+			</section>
+			<section name="Jan_11_opp_encapsulation">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_11_opp_encapsulation\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_11_opp_encapsulation\javadoc.xml"/>
+			</section>
+			<section name="Jan_13_usefulClass_data">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_13_usefulClass_data\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_13_usefulClass_data\javadoc.xml"/>
+			</section>
+			<section name="Jan_13_exceptionHandling">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_13_exceptionHandling\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_13_exceptionHandling\javadoc.xml"/>
+			</section>
+			<section name="Jan_04_Repeat">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_04_Repeat\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_04_Repeat\javadoc.xml"/>
+			</section>
+			<section name="Jan_31_1_AOP">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_31_1_AOP\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_31_1_AOP\javadoc.xml"/>
+			</section>
+			<section name="Jan_11_opp_is_a_Inheritance_02">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_11_opp_is_a_Inheritance_02\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_11_opp_is_a_Inheritance_02\javadoc.xml"/>
+			</section>
+			<section name="Jan_06_ppSummary">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_06_ppSummary\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_06_ppSummary\javadoc.xml"/>
+			</section>
+			<section name="Jan_10_oop_static">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_10_oop_static\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_10_oop_static\javadoc.xml"/>
+			</section>
+			<section name="Jan_11_oop_accessModifier">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_11_oop_accessModifier\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_11_oop_accessModifier\javadoc.xml"/>
+			</section>
+			<section name="Jan_02_Function">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_02_Function\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_02_Function\javadoc.xml"/>
+			</section>
+			<section name="Jan_20_1_uselessClass_SocketClient">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_20_1_uselessClass_SocketClient\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_20_1_uselessClass_SocketClient\javadoc.xml"/>
+			</section>
+			<section name="Jan_26_DB">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_26_DB\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_26_DB\javadoc.xml"/>
+			</section>
+			<section name="jan_30_db">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\DB_Manager_AOP_JAR"/>
+				<item key="antpath" value="D:\WeSeongGu\jan_30_db\javadoc.xml"/>
+			</section>
+			<section name="Jan_20_2_usefulClass_Thread">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_20_2_usefulClass_Thread\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_20_2_usefulClass_Thread\javadoc.xml"/>
+			</section>
+			<section name="Jan_12_ThisIsJava_boss">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_12_ThisIsJava_boss\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_12_ThisIsJava_boss\javadoc.xml"/>
+			</section>
+			<section name="Jan_13_opp">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Jan_13_opp\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Jan_13_opp\javadoc.xml"/>
+			</section>
+			<section name="Dec_28">
+				<item key="href" value=""/>
+				<item key="destdir" value="D:\WeSeongGu\Dec_28\doc"/>
+				<item key="antpath" value="D:\WeSeongGu\Dec_28\javadoc.xml"/>
+			</section>
+		</section>
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
+		<item key="group_libraries" value="true"/>
+		<item key="layout" value="2"/>
+		<item key="rootMode" value="1"/>
+		<item key="linkWithEditor" value="false"/>
+		<item key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;packageExplorer group_libraries=&quot;1&quot; layout=&quot;2&quot; linkWithEditor=&quot;0&quot; rootMode=&quot;1&quot; workingSetName=&quot;Aggregate for window 1672183676709&quot;&gt;&#x0D;&#x0A;&lt;customFilters userDefinedPatternsEnabled=&quot;false&quot;&gt;&#x0D;&#x0A;&lt;xmlDefinedFilters&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.StaticsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.buildship.ui.packageexplorer.filter.gradle.buildfolder&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonSharedProjectsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.m2e.MavenModuleFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.buildship.ui.packageexplorer.filter.gradle.subProject&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.EmptyLibraryContainerFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.PackageDeclarationFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.pde.ui.BinaryProjectFilter1&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.pde.ui.ExternalPluginLibrariesFilter1&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.FieldsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonJavaProjectsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.ContainedLibraryFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.internal.ui.PackageExplorer.HideInnerClassFilesFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.DeprecatedMembersFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonJavaElementFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.LibraryFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.CuAndClassFileFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.internal.ui.PackageExplorer.EmptyPackageFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonPublicFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;/xmlDefinedFilters&gt;&#x0D;&#x0A;&lt;/customFilters&gt;&#x0D;&#x0A;&lt;/packageExplorer&gt;"/>
+	</section>
+	<section name="SourceActionDialog.constructors">
+		<item key="VisibilityModifier" value="1"/>
+		<item key="FinalModifier" value="false"/>
+		<item key="SynchronizedModifier" value="false"/>
+		<item key="Comments" value="false"/>
+	</section>
+	<section name="GenerateConstructorUsingFieldsSelectionDialog">
+		<item key="OmitCallToSuper" value="false"/>
+	</section>
+	<section name="DialogBounds_GenerateConstructorUsingFieldsSelectionDialog">
+		<item key="DIALOG_X_ORIGIN" value="1042"/>
+		<item key="DIALOG_Y_ORIGIN" value="106"/>
+		<item key="DIALOG_WIDTH" value="531"/>
+		<item key="DIALOG_HEIGHT" value="678"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="AddUnimplementedConstructorsDialog">
+		<item key="OmitCallToSuper" value="false"/>
+	</section>
+	<section name="DialogBounds_AddUnimplementedConstructorsDialog">
+		<item key="DIALOG_X_ORIGIN" value="703"/>
+		<item key="DIALOG_Y_ORIGIN" value="110"/>
+		<item key="DIALOG_WIDTH" value="531"/>
+		<item key="DIALOG_HEIGHT" value="627"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="SourceActionDialog.methods">
+		<item key="VisibilityModifier" value="1"/>
+		<item key="FinalModifier" value="false"/>
+		<item key="SynchronizedModifier" value="false"/>
+		<item key="Comments" value="false"/>
+		<item key="InstanceOf" value="false"/>
+		<item key="Blocks" value="false"/>
+		<item key="Objects.equals &amp; Objects.hash" value="true"/>
+		<item key="LimitElements" value="false"/>
+		<item key="IgnoreDefault" value="true"/>
+		<item key="StringStyle" value="0"/>
+		<item key="LimitValue" value="10"/>
+		<item key="SkipNull" value="false"/>
+		<item key="ToStringTemplateSelected" value="0"/>
+	</section>
+	<section name="AddGetterSetterDialog">
+		<item key="SortOrdering" value="false"/>
+		<item key="RemoveFinal" value="false"/>
+	</section>
+	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
+		<item key="DIALOG_X_ORIGIN" value="698"/>
+		<item key="DIALOG_Y_ORIGIN" value="64"/>
+		<item key="DIALOG_WIDTH" value="540"/>
+		<item key="DIALOG_HEIGHT" value="696"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="OverrideMethodDialog">
+		<item key="showtypes" value="true"/>
+	</section>
+	<section name="DialogBounds_OverrideMethodDialog">
+		<item key="DIALOG_X_ORIGIN" value="699"/>
+		<item key="DIALOG_Y_ORIGIN" value="186"/>
+		<item key="DIALOG_WIDTH" value="539"/>
+		<item key="DIALOG_HEIGHT" value="513"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="DialogBounds_GenerateHashCodeEqualsDialog">
+		<item key="DIALOG_X_ORIGIN" value="710"/>
+		<item key="DIALOG_Y_ORIGIN" value="132"/>
+		<item key="DIALOG_WIDTH" value="516"/>
+		<item key="DIALOG_HEIGHT" value="594"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="DialogBounds_GenerateToStringDialog">
+		<item key="DIALOG_X_ORIGIN" value="710"/>
+		<item key="DIALOG_Y_ORIGIN" value="68"/>
+		<item key="DIALOG_WIDTH" value="516"/>
+		<item key="DIALOG_HEIGHT" value="691"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="NewPackageWizardPage">
+		<item key="create_package_info_java" value="false"/>
+	</section>
+	<section name="ClasspathContainerSelectionPage">
+		<item key="index" value="0"/>
+	</section>
+</section>

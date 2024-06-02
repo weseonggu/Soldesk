@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<script>
+    $(function(){
+        //http://localhost/mar201/product.json?page=1
+        //http://localhost/mar201/menu.get
+
+
+        //ajax : 브라우저의 동일 출처 정책
+        //      외부 데이터는 튕겨냄
+        // Cross-Domain AJAX : 외부 데이터 가져오는 AJAX
+        //     방1) 서버쪽에서 response.setHeader("Access-Control-Allow-Origin", "*"); 을 설정 (단 서버에서 미설정시 사용 불가능, json만가능)
+        //     방2) 서버쪽에 방1 설정 안했으면 -> proxy서버 만들어서 해결 (java에서 파싱해서 ajax로 호출 하는 방식)
+
+        $("#b1").click(function(){
+            $.ajax({
+                url: "http://localhost/mar201/menu.get",
+                success : function(menu){
+                    alert(menu);
+                }
+            });
+
+        });
+
+        $("#b2").click(function(){
+            $.getJSON("http://localhost/mar201/product.json?page=1",function(jjj){
+                alert(jjj);
+            });
+        });
+
+    });
+</script>
+</head>
+<body>
+    <button id ="b1">메뉴xml</button>
+    <button id ="b2">상품json</button>
+</body>
+</html>

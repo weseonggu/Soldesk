@@ -1,0 +1,38 @@
+package com.we.mar072.convert;
+
+import java.util.HashMap;
+
+import javax.servlet.http.HttpServletRequest;
+
+//@Service
+public class ConvertDAO {
+	HashMap<String, Double> danwiMap;
+	HashMap<String, String> priorDanwi;
+
+	public ConvertDAO() {
+//		danwiMap = new HashMap<String, Double>();// 니중에 등록
+//		danwiMap.put("inch", 0.393701);
+//		danwiMap.put("㎡", 3.305785);
+//		priorDanwi = new HashMap<String, String>();
+//		priorDanwi.put("inch", "cm");
+//		priorDanwi.put("㎡", "평");
+	}
+
+	public void convertNum(UCResult ur, HttpServletRequest req) {
+		double result = ur.getNum() * danwiMap.get(ur.getDanwi());
+		UCResult send = new UCResult(ur.getNum(), ur.getDanwi(), priorDanwi.get(ur.getDanwi()), result, ur.getDanwi());
+		req.setAttribute("result", send);
+		
+		//한줄에 다쓰기
+		req.setAttribute("result", new UCResult(ur.getNum(), ur.getDanwi(), priorDanwi.get(ur.getDanwi()), ur.getNum() * danwiMap.get(ur.getDanwi()), ur.getDanwi()));
+	}
+
+	public void setDanwiMap(HashMap<String, Double> danwiMap) {
+		this.danwiMap = danwiMap;
+	}
+
+	public void setPriorDanwi(HashMap<String, String> priorDanwi) {
+		this.priorDanwi = priorDanwi;
+	}
+
+}

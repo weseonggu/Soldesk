@@ -1,0 +1,13 @@
+select * from jan27_run;
+select * from jan27_restaurant;
+select * from jan27_ceo;
+select * from jan27_menu;
+
+select r_name, r_jijum  from JAN27_RESTAURANT 
+where r_no in (select m_r_no from JAN27_MENU 
+where m_price = (select max(m_price)from jan27_menu));
+-- 최연소 사장님 가계의 매뉴 가격
+SELECT m_name, m_price from jan27_menu 
+    where m_r_no in (select r_r_no from jan27_run 
+        where r_c_no = (select c_no from jan27_ceo 
+            where c_date in (select min(c_date) from jan27_ceo)));

@@ -1,0 +1,29 @@
+package com.we.db.manager;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class DBManager {
+
+	public static Connection dbConnect(String addr, String id, String pw) throws SQLException {
+		return DriverManager.getConnection(addr, id, pw);
+	}
+
+	public static void dbClosed(Connection con, ResultSet rs, PreparedStatement pstmt) {
+		try {
+			rs.close();
+		} catch (Exception e2) {
+		}
+		try {
+			pstmt.close();
+		} catch (Exception e1) {
+		}
+		try {
+			con.close();
+		} catch (Exception e) {
+		}
+	}
+}

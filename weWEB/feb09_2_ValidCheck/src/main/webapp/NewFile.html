@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+img{
+width:200px;
+height: 200px;
+object-fit: cover;
+}
+</style>
+</head>
+<body>
+	<form action="ResizeImg" method="post" enctype="multipart/form-data">
+		가로: <input name="width" type="number"><br>
+		세로: <input name="height"><br>
+		사진: <input name="img" type="file"><br>
+		<button>전송</button>
+	</form>
+</body>
+</html>

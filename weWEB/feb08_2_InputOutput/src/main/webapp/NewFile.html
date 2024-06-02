@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/NewFile.css">
+</head>
+<body>
+	<form action="Servlet" method="post">
+		<table>
+			<tr>
+				<th colspan="2" class="title">회원가입</th>
+			</tr>
+			<tr>
+				<td>이름:</td>
+				<td><input name="name" class="boxType"></td>
+			</tr>
+			<tr>
+				<td>ID:</td>
+				<td><input name="ID" class="boxType"></td>
+			</tr>
+			<tr>
+				<td>PW:</td>
+				<td><input name="PW" class="boxType" type="password"></td>
+			</tr>
+			<tr>
+				<td>주소:</td>
+				<td><input name="ADDR" class="boxType" type="radio" value="수도권"
+					checked="checked">수도권<br> <input name="ADDR"
+					class="boxType" type="radio" value="기타">기타</td>
+			</tr>
+			<tr>
+				<td>집:</td>
+				<td>
+					<select name = "home" class = "homeselect">
+						<option>아파트</option>
+						<option value="단독주택">주택</option>
+						<option>주상복합</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>취미:</td>
+				<td>
+					<input name="hobby" type="checkbox" value="영화"> 영화<br>
+					<input name="hobby" type="checkbox" value="드라마"> 드라마<br>
+					<input name="hobby" type="checkbox" value="게임"> 게임<br>
+					<input name="hobby" type="checkbox" value="요리"> 요리<br>
+				</td>
+			</tr>
+			<tr>
+				<td>이동수단:</td>
+				<td>
+					<select name="move" multiple="multiple" size="2">
+						<option>전철</option>
+						<option>버스</option>
+						<option>걷기</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>인사말:</td>
+				<td>
+					<textarea name="hi"></textarea>
+				</td>
+			</tr>
+			<tr>
+
+				<td align="center" colspan="2"><input type="reset" value="다시" class="b">
+					<input type="image" src="join.jpg" class="search">
+					<button class="b">가입</button></td>
+			</tr>
+		</table>
+
+	</form>
+	<div class="img">
+
+		<img alt="" src="1.png">
+	</div>
+</body>
+</html>

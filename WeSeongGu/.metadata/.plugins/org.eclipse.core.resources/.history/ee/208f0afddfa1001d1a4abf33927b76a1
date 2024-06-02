@@ -1,0 +1,108 @@
+package com.we.main;
+
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.util.ArrayList;
+
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserFactory;
+
+import com.we.db.manager.DBManager;
+
+public class XmlGetData {
+	private HttpURLConnection huc;
+	private URL u;
+	private InputStream is;
+	private XmlPullParserFactory xppf;
+	private XmlPullParser xpp;
+
+	// 생성자
+	public XmlGetData() throws Exception {
+		// TODO Auto-generated constructor stub
+		String s = "http://openapi.seoul.go.kr:8088/575a4655496b636839386f58586542/xml/RealtimeCityAir/1/25/";
+		u = new URL(s);
+		huc = (HttpURLConnection) u.openConnection();
+		this.is = huc.getInputStream();
+		xppf = XmlPullParserFactory.newInstance();
+		xpp = xppf.newPullParser();
+		xpp.setInput(is, "utf-8");
+	}
+
+	public ArrayList<DustMeasurement> getdata() throws Exception {
+		ArrayList<DustMeasurement> arr = new ArrayList<>();
+		DustMeasurement d = null;
+		int type = xpp.getEventType();
+		String t = null;
+		while (type != XmlPullParser.END_DOCUMENT) {
+
+			if (type == XmlPullParser.START_TAG) {
+				t = xpp.getName();
+				if (t.equals("row")) {
+					d = new DustMeasurement();
+				}
+			} else if (type == XmlPullParser.TEXT) {
+				if (t.equals("MSRDT")) {
+					d.setMSRDT(xpp.getText());
+				} else if (t.equals("MSRRGN_NM")) {
+					d.setMSRRGN_NM(xpp.getText());
+				} else if (t.equals("MSRSTE_NM")) {
+					d.setMSRSTE_NM(xpp.getText());
+				} else if (t.equals("PM10")) {
+					d.setPM10(Integer.parseInt(xpp.getText()));
+				} else if (t.equals("PM25")) {
+					d.setPm25(Integer.parseInt(xpp.getText()));
+				} else if (t.equals("O3")) {
+					d.setO3(Double.parseDouble(xpp.getText()));
+				} else if (t.equals("IDEX_NM")) {
+					if (xpp.getText() == null) {
+						continue;
+					} else {
+						d.setIDEX_NM(xpp.getText());
+						arr.add(d);
+						insertData(d);
+					}
+				}
+			} else if (type == XmlPullParser.END_TAG) {
+				t = "";
+			}
+			xpp.next();// 다음 dom겍체
+			type = xpp.getEventType();
+		}
+		return arr;
+	}
+
+	private void insertData(DustMeasurement d) {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		try {
+			con = DBManager.dbConnect("jdbc:oracle:thin:@192.168.0.170:1521:xe", "we", "3750");
+			String sql = "insert into feb01_weather values" + "(to_date(?,'YYYYMMDDHH24MI'),?,?,?,?,?,?)";
+			pstmt = con.prepareStatement(sql);
+
+			pstmt.setString(1, d.getMSRDT());
+			pstmt.setString(2, d.getMSRRGN_NM());
+			pstmt.setString(3, d.getMSRSTE_NM());
+			pstmt.setInt(4, d.getPM10());
+			pstmt.setInt(5, d.getPm25());
+			pstmt.setDouble(6, d.getO3());
+			pstmt.setString(7, d.getIDEX_NM());
+			if (pstmt.executeUpdate() == 1) {
+				System.out.println("성공");
+			} else {
+				System.out.println("실패");
+			}
+
+		} catch (Exception e) {
+			// TODO: handle exception
+		} finally {
+			DBManager.dbClosed(con, pstmt, null);
+		}
+	}
+
+	public void dchttp() {
+		huc.disconnect();
+	}
+}

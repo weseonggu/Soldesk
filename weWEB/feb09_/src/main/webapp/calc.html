@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/calc.css">
+</head>
+<body>
+	<form action="Calculator" method="post" enctype="multipart/form-data">
+		<table>
+			<tr>
+				<td><span>x: </span></td>
+				<td><input name="x"></td>
+			</tr>
+			<tr>
+				<td><span>y: </span></td>
+				<td><input name="y"></td>
+			</tr>
+			<tr>
+				<td><span>계산</span></td>
+				<td>
+					<input type="radio" name="do" value="+" checked="checked">+
+					<input type="radio" name="do" value="-">-<br>
+					<input type="radio" name="do" value="*">*
+					<input type="radio" name="do" value="/">/<br>
+				</td>
+			</tr>
+			<tr>
+				<td><span>파일</span></td>
+				<td><input name="txtf" type="file"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><button>결과 보기</button></td>
+			</tr>
+
+		</table>
+	</form>
+</body>
+</html>

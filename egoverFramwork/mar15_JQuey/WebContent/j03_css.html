@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#b1").click(function(){
+				$("div").css("background-color","yellow");
+			});
+			var is = true;
+			$("#b2").click(function(){
+				if(is==true){
+					$("div").css("width","100px").css("height","100px");
+				}else{
+					$("div").css("width","200px").css("height","200px");
+				}
+				is= !is
+			});
+			
+			$("#b3").click(function(){
+				setTimeout(function(){// 시간후 작동
+					var w =$("img").css('width');
+					if(w=="100px"){
+						$("img").css("width","200px").css("height","200px;");					
+					}else{
+						$("img").css("width","100px").css("height","100px;");					
+					}
+				},2000);
+			});
+			var timer = null;
+			$("#b4").click(function(){
+				timer = setInterval(function(){// 시간마다 함수 자동 실행
+					
+					var location =Math.random() * 1000;
+					$("img").css("position","fixed").css("right",location+"px").css("bottom",location+"px");
+					
+				},1000);
+			});
+			$("#b5").click(function(){
+				clearInterval(timer);// 인터벌 멈추기
+			});
+		});
+		
+	</script>
+	<style type="text/css">
+	div{
+		width: 200px;
+		height: 200px;
+		background-color: black;
+		/* CSS3에서 애니매이션 추가*/
+		transition: all 1s ease-in;
+	}
+	img{
+		width: 100px;
+		transition: all 0.3s ease-in;
+	}
+	</style>
+</head>
+<body>
+	<div>
+	ㅋㅋㅋ
+	</div>
+	<img alt="" src="다운로드.jpg">
+	<br>
+	<button id = "b1">버튼1</button>
+	<button id = "b2">버튼2</button>
+	<hr>
+	<button id = "b3">버튼3</button>
+	<button id = "b4">버튼4</button>
+	<button id = "b5">버튼5</button>
+</body>
+</html>

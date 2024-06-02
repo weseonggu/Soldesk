@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            //DOM객체의 실제 위치
+            var intro=$("#intro").offset().top;
+            var dataRoom=$("#dataRoom").offset().top;
+            var gallery=$("#gallery").offset().top;
+
+            $("#m1").click(function(){
+                //$(window).scrollTop(intro-70);// 순간 이동
+                $("html").animate({scrollTop : intro-70},500);//자연스런 이동
+            });
+            $("#m2").click(function(){
+                //$(window).scrollTop(dataRoom-70);
+                $("html").animate({scrollTop : dataRoom-70},500);
+            });
+            $("#m3").click(function(){
+                //$(window).scrollTop(gallery-70);
+                $("html").animate({scrollTop : gallery-70},500);
+            });
+
+
+
+
+
+            
+        });
+
+
+    </script>
+    <style>
+        table{
+            width: 100%;
+            height: 50px;;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            background-color: white;
+        }
+        body{
+            padding-top: 70px;
+        }
+    </style>
+</head>
+<body></body>
+    <table border="1">
+        <tr>
+            <th id="m1">소개</th>
+            <th id="m2">자료실</th>
+            <th id="m3">갤러리</th>
+        </tr>
+    </table>
+    <h1 id="intro">소개</h1>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    <h1 id="dataRoom">자료실</h1>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    <h1 id="gallery">갤러리</h1>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    ㅋㅋㅋㅋ<br>
+    
+</body>
+</html>

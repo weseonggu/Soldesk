@@ -1,0 +1,22 @@
+package com.we.jan31.main;
+
+public class HomeController {
+	public static void main(String[] args) {
+		Search s  =new Search();
+		SendInfo ran = s.input_info();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		s.killsc();
+	}
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//document: 이 html
+	//navigator: 브라우저 - 기능적
+	//window: 브라우저	- 디자인적
+	//location.href="HomeController";
+	//alert(navigator.userAgent);// 접속한 브라우저 정보
+	if(navigator.userAgent.indexOf("Android") != -1 ||
+			navigator.userAgent.indexOf("iPhone") != -1){// 스마트폰
+		location.href="httsp://www.naver.com";
+	}else{//pc
+		location.href="HomeController";
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

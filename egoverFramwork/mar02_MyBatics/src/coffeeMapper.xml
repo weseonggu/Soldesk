@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="coffeeMapper">
+	<select id="getCoffee" resultType="com.we.main.Coffee">
+	select * from feb28_coffee
+	</select>
+	<insert id="inertCoffee" parameterType="com.we.main.Coffee">
+		insert into feb28_coffee values (#{c_name}, #{c_price})
+	</insert>
+</mapper>

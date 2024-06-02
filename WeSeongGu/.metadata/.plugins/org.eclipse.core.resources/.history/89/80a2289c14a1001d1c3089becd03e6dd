@@ -1,0 +1,9 @@
+package com.we.jan31.main;
+
+public class M {
+
+	public M() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

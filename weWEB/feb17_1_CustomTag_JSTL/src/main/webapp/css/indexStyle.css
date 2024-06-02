@@ -1,0 +1,34 @@
+@charset "EUC-KR";
+a{
+	text-decoration: none;
+}
+#idexArea{
+	width: 100%;
+	margin: auto;
+	overflow: auto;
+}
+#siteTitle{
+	width: 70%;
+	margin: auto;
+}
+#siteTitle a h1{
+	color: #191970;
+}
+#mainMenu{
+	border-bottom: 3px solid #6A5ACD;
+	border-top: 3px solid #6A5ACD;
+	padding: 8px;
+	margin-bottom:16px;
+}
+#mainMenu div{
+	width: 70%;
+	margin: auto;
+}
+#mainMenu div a{
+	margin-left: 8px;
+	color: black;
+}
+#contentArea{
+	width: 70%;
+	margin: auto;
+}

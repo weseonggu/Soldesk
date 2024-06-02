@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;geajang&apos; to &apos;Geajang&apos;&#x0D;&#x0A;- Original project: &apos;Jan_10_oop_static&apos;&#x0D;&#x0A;- Original element: &apos;geajang&apos;&#x0D;&#x0A;- Renamed element: &apos;Geajang&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;geajang&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{geajang.java[geajang" matchStrategy="1" name="Geajang" qualified="false" references="true" similarDeclarations="false" stamp="1673309781623" textual="false" version="1.0"/>
+</session>

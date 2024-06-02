@@ -1,0 +1,12 @@
+1676528696544	Move 6 resources to 'jsp'
+1676529341835	Move 'menu1.jsp' to 'menu1'
+1676529364124	Move 'menu2.jsp' to 'calc'
+1676529420144	Move 'home.jsp' to 'home'
+1676529424154	Move 'test.jsp' to 'webapp'
+1676529426396	Move 'test2.jsp' to 'webapp'
+1676529541572	Rename resource 'menu2.jsp'
+1676530068156	Move 'index.jsp' to 'webapp'
+1676531884334	Rename resource 'check.js'
+1676531998131	Rename resource 'calc.js'
+1676534615994	Rename type 'HomeController'
+1676535983046	Delete element

@@ -1,0 +1,5 @@
+package com.we.db.manager;
+
+public class DBManager {
+
+}

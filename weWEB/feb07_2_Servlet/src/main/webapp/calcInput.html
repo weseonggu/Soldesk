@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- html vs servlet
+		그페이지에 프로그래밍이언어가 필요한가
+	-->
+	<hr>
+	<!-- a태그 get방식 요청 -->
+	<a href = "CalculatorServlet?xxx=451&yyy=48">계산하기</a>
+	<hr>
+	<a href = "NewGugudan?dan=5&border=5">구구단</a>
+	<hr>
+	<a href = "GugudanServlet">구구단전부</a>
+	<hr>
+	<form action="CalculatorServlet">
+		x: <input name="xxx"><br>
+		y: <input name="yyy"><br>
+		<button>계산버튼</button>
+	</form>
+	<!-- form + button 조합 - 누르면 action에 쓴곳으로 요청 날려줌 
+		input의 name 속성으로 요청 파라미터에 값을 넣어 준다.-->
+	<hr>
+		<form action="NewGugudan">
+		단: <input name="dan"><br>
+		태두리: <input name="border"><br>
+		<button>구구단버튼</button>
+	</form>
+</body>
+</html>

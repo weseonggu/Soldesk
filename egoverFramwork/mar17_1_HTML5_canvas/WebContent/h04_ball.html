@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<script>
+    $(function(){
+        var paper = document.getElementById("p");// canvas는 최신이라 $()이게 잘 안먹힘
+        var pen = paper.getContext("2d");
+        var ball = new Image();
+        ball.src = "ball.png";
+        ball.onload = function(){
+        pen.drawImage(ball,0,0);
+        };
+        var x=5;
+        var y=5;
+        var xd=3;
+        var yd=3;
+        var barX=0;
+        var poff = $("#p").offset();
+
+        $("#p").mousemove(function(e){
+            barX =e.pageX-poff.left-40;
+        });
+
+        var ss = setInterval(function(){
+            pen.fillStyle = "#ffffff88";
+            pen.fillRect(0,0,400,700);
+            if(x>=370 || x<=0){
+                xd*=-1;
+            }
+            if(y>=700 || y<=0){
+                yd*=-1;
+            }
+            if((y>=655)){
+                if((x+15)>=barX && (x+15)<=barX+80){
+                    var rl = Math.random()*10;
+                    if(rl>5){
+                        xd*=-1;
+                    }
+                    else{
+                        xd*=1;
+                    }
+                    yd*=-1;
+                }
+            }
+            x+=(xd);
+            y+=(yd);
+            pen.drawImage(ball,x,y);
+
+            if(y>=680){
+                clearInterval(ss);
+                alert("게임 오버");
+            }
+
+            pen.fillStyle = "#123456";
+            pen.fillRect(barX,680,80,20);
+        },10);                
+    });
+</script>
+<style>
+    #p{
+        border: 1px solid black;
+    }
+</style>
+</head>
+<body>
+    <canvas id ="p" width="400px" height="700px"></canvas>
+</body>
+</html>

@@ -1,0 +1,17 @@
+package com.we.jan31.main;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class SelectResult {
+	public String result_select() {
+		Connection con =null;
+		PreparedStatement pstmt = null;
+		
+		try {
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

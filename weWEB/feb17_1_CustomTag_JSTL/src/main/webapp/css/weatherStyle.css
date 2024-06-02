@@ -1,0 +1,24 @@
+@charset "EUC-KR";
+
+#weatherCon{
+	width:100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#weatherInfo {
+	border: 2px solid black;
+	margin :8px;
+	padding:8px;
+	border-radius: 7px;
+	width: 120px;
+	float: left;
+}
+#weatherInfo img{
+	display: block;
+	margin: auto;
+}
+#weatherInfo span{
+	display: block;
+	margin-top: 8px;
+}

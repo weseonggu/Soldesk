@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+	<bean id="dog" class="com.we.mar06sdi.Dog">
+		<constructor-arg value="사이"></constructor-arg>
+		<constructor-arg value="7"></constructor-arg>
+	</bean>
+	
+	<bean id ="human" class="com.we.mar06sdi.Human">
+		<property name="name" value="홍길동" ></property>
+		<property name="age" value="30" ></property>
+		<property name="pet" ref="dog"></property><!-- 다른 객체 등록 -->
+		<property name="nickname"><!-- 배열 -->
+			<list value-type="java.lang.String">
+				<value>까치</value>
+				<value>호박</value>
+				<value>아리수</value>
+				<value>신박</value>
+				<value>ㅇㅇ</value>
+			</list>
+		</property>
+		<property name="friends"><!-- ArrayList value-type 기본형은 생략 가능-->
+			<list>
+				<value>김길동</value>
+				<value>이길동</value>
+			</list>
+		</property>
+		<property name="stats">
+			<map key-type="java.lang.String" value-type="java.lang.Double">
+				<entry key="키" value="180"></entry>
+				<entry key="몸무게" value="80"></entry>
+			</map>
+		</property>
+	</bean>
+	<bean id="g" class="com.we.mar06sdi.Gejang"></bean>
+	<context:annotation-config></context:annotation-config>
+</beans>

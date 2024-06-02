@@ -1,0 +1,13 @@
+package com.we.jan31.main;
+
+import java.util.Scanner;
+
+public class WhatSelect {
+	Scanner sc;
+	public WhatSelect() {
+		sc= new Scanner(System.in);
+		
+	}
+	
+	
+}

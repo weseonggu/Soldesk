@@ -1,0 +1,45 @@
+@charset "EUC-KR";
+@font-face {
+  font-family : "qwer";
+  src : url(qwe.TTF);
+}
+table{
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	padding: 0px;
+	border : solid 3px green;
+	background-color: green;
+}
+table tr td{
+	margin: 0px;
+	padding: 0px;
+}
+button{
+	background-color: green;
+	border: solid 1px white;
+	color : white;
+	font-family: qwer;
+}
+table tr td span{
+	font-size: 10px;
+	color: white;
+	font-family: qwer;
+}
+#text{
+	height: 21px;
+}
+#title{
+	background-color: white;
+	border-radius: 10px;
+	height: 25px;
+}
+h3{
+	color: green;
+	font-family: qwer;
+	text-shadow: 1px 1px 1px gray;
+}
+input, button, select{
+	width: 170px;
+	
+}

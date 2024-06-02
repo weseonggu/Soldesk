@@ -1,0 +1,10 @@
+package com.we.jan31.main;
+
+public class ConsoleScreen_v {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

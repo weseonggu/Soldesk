@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;feb06_css/public/NewFile.css&apos; to &apos;BoxModel.css&apos;" description="Rename resource &apos;NewFile.css&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="public/NewFile.css" name="BoxModel.css" stamp="1675654034771" updateReferences="true"/>
+</session>

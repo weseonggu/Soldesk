@@ -1,0 +1,18 @@
+package com.we.jan31.main;
+// DAO/DTO패턴
+// DAO data Acess object :db관련 작업하는 M
+// DTO: DAO에서 작업하고 결과를 DTO로 받는다
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class Back {
+
+	private Connection con = null;
+	private PreparedStatement pstmt = null;
+	public Back() {
+		// TODO Auto-generated constructor stub
+	}
+	public static void reg(SendInfo ra) {
+		
+	}
+}

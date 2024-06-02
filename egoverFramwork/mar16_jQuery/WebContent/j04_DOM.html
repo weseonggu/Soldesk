@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script
+  src="https://code.jquery.com/jquery-3.6.4.js"
+  integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+  crossorigin="anonymous"></script>
+  <script>
+    $(function(){
+        $("button").click(function(){
+            var name = $("#name").val();
+            var price = $("#price").val();
+            var ntd=$("<td></td>").text(name);
+            var ptd=$("<td></td>").text(price);
+            var tr = $("<tr></tr>").append(ntd,ptd);
+            // var tr= $("<tr></tr>").html("<td>"+name+"</td>"+"<td>"+price+"</td>");
+            var ntd2=$("<th></th>").text("메뉴명");
+            var ptd2=$("<th></th>").text("가격");
+            var tr2 = $("<tr></tr>").attr("id","title").append(ntd2,ptd2);
+            $("#title").remove();
+            $("table").prependTo(tr2,tr);
+            $("#name").val("");
+            $("#price").val("");
+        });
+    });
+
+  </script>
+
+</head>
+<body>
+    메뉴명:<input id ="name"><br>
+    가격: <input id ="price"><br>
+    <button>등록</button>
+    <hr>
+    <table border="1">
+    </table>
+</body>
+</html>

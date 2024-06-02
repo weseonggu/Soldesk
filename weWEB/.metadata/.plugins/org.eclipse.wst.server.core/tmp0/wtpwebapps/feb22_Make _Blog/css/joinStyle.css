@@ -1,0 +1,54 @@
+@charset "EUC-KR";
+#joinPage div{
+	text-align: center;
+}
+#joinPage div div{
+	display: inline-block;
+	
+}
+#joinPage div div h1{
+	color: #000080;
+	font-family: font1;
+}
+#joinPage input{
+	display: block;
+	margin-bottom: 16px;
+	width: 95%;
+	height: 40px;
+	border-radius: 2px;
+}
+#joinPage input:not(:last-of-type){
+	border: 3px solid #6495ED;
+	margin: auto;
+	margin-bottom: 16px;
+}
+#joinPage input[type=file]{
+	margin: auto;
+	margin-bottom: 16px;
+}
+#joinPage input[type=file]::file-selector-button{
+	background-color: #48D1CC;
+	border: 0px;
+	height: 40px;
+	font-family: font1;
+	border-radius: 2px;
+}
+#joinPage button{
+	background-color: #48D1CC;
+	border: 0px;
+	width: 30%;
+	height: 40px;
+	margin: auto;
+	font-family: font1;
+	border-radius: 2px;
+}
+#birthselect{
+	margin-bottom: 16px;
+	font-family: font1;
+}
+#birthselect select{
+	height: 30px;
+	border: 3px solid #6495ED;
+	color : #000080;
+	border-radius: 2px;
+}

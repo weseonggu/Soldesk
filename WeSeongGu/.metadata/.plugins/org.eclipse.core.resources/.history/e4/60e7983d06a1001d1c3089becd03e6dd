@@ -1,0 +1,13 @@
+package com.we.jan31.main;
+
+public class Human {
+	public void goSchool() {
+		System.out.println("학교가");
+	}
+	public void goMart() {
+		System.out.println("마트가");
+	}
+	public void goPark() {
+		System.out.println("공원가");
+	}
+}

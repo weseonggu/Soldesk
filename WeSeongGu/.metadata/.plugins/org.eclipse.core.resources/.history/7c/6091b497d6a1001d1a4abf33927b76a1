@@ -1,0 +1,9 @@
+package com.we.main;
+
+public class GDMain {
+	//http://openapi.seoul.go.kr:8088/575a4655496b636839386f58586542/xml/RealtimeCityAir/1/25/
+
+	public static void main(String[] args) {
+		
+	}
+}

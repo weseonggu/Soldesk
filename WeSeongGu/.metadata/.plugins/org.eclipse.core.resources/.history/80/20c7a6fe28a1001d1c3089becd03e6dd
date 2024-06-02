@@ -1,0 +1,11 @@
+package com.we.jan31.main;
+
+import java.util.Scanner;
+
+public class Search {
+	Scanner what = null;
+	
+	public Search() {
+		what = new Scanner(System.in);
+	}
+}

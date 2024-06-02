@@ -1,0 +1,128 @@
+@charset "EUC-KR";
+
+@font-face {
+    font-family: 'font1';
+    src: url(qwer.TTF);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'font2';
+    src: url(Asee.TTF);
+}
+a{
+	text-decoration: none;
+}
+#idexArea{
+	width: 100%;
+	margin: auto;
+	overflow: auto;
+}
+#siteTitle{
+	width: 70%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+#siteTitle #loginForm{
+	float: right;
+	margin-bottom: 8px;
+}
+#siteTitle #loginForm span{
+	display: inline-block;
+	color: #5F9EA0;
+	font-family: font1;
+}
+#siteTitle #loginForm input{
+	border-radius: 5px;
+	border: 1px solid #4682B4;
+	width: 100px;
+}
+#siteTitle #loginForm div button{
+	border-radius: 5px;
+	border: 0px;
+	background-color: #7FFFD4;
+	font-family: font1;
+	display: inline-block;
+}
+#siteTitle #loginForm div a{
+	border-radius: 5px;
+	border: 0px;
+	background-color: #7FFFD4;
+	font-family: font1;
+	display: inline-block;
+	color: black;
+	font-size: 14px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+#siteTitle #logoutForm{
+	display: inline-flex;
+	align-items: flex-end;
+	height: 79px;
+	margin: 3px;
+	font-family: font1;
+}
+
+#siteTitle #profile{
+	display: block;
+	width: auto;
+	height: 100%;
+	margin-right: 8px;
+	border-radius: 5px;
+}
+#siteTitle #logoutForm button{
+	border-radius: 5px;
+	border: 0px;
+	background-color: #7FFFD4;
+	font-family: font1;
+}
+#siteTitle #logoutForm a{
+	border-radius: 5px;
+	border: 0px;
+	background-color: #7FFFD4;
+	font-family: font1;
+	display: inline-block;
+	color: black;
+	font-size: 14px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+#siteTitle #logoutForm form p{
+	margin: 2px;
+}
+#siteTitle a{
+	display: block;
+}
+#siteTitle a h1{
+	color: #191970;
+	font-family: font1;
+	
+}
+#mainMenu{
+	border-bottom: 3px solid #6A5ACD;
+	border-top: 3px solid #6A5ACD;
+	padding: 8px;
+	margin-bottom:16px;
+}
+#mainMenu div{
+	width: 70%;
+	margin: auto;
+}
+#mainMenu div a{
+	margin-left: 8px;
+	color: black;
+	font-family: font2;
+	color: #6495ED;
+	font-weight: 2;
+}
+#contentArea{
+	width: 70%;
+	margin: auto;
+}

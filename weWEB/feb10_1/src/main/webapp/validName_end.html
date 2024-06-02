@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="weValidCheck.js"></script>
+<script type="text/javascript">
+	function check(){
+		var idField = document.f.id;
+		var pwField = document.f.pw;
+		var pwChkField = document.f.pwChk;
+		var ageField=document.f.age;
+		var photoField=document.f.photo;
+		if(isEmpty(idField) || cotainHS(idField)){
+			alert("id입력");
+			idField.value="";
+			idField.focus();
+			return false;
+		}
+		if (isEmpty(pwField)||lessThan(pwField,4)
+				|| notContains(pwField,"1234567890")
+				|| notContains(pwField,"qwertyuiopasdfghjklzxcvbnm")
+				|| notEquals(input1,input2)){
+			alert("pw입력하시오");
+			pwField.value="";
+			pw.focus();
+			return false;
+		}
+		if(isEmpty(ageField)|| isNotNumber(ageField)){
+			alert("나이");
+			ageField.value="";
+			ageField.focus();
+			return false;
+		}
+	isNotType	if(isEmpty(photoField)|| isNotType(photoField,"png")){
+			alert("사진");
+			photoField.value="";
+			photoField.focus();
+			return false;
+		}
+		return true;
+	}
+</script>
+
+</head>
+<body>
+	<form name ="f" onsubmit = "return check();" action ="ㅋ">
+		id: <input name ="id"
+		placeholder="필수 한글x" maxlength="10" 
+		autofocus="autofocus"
+		autocomplete="off"><br>
+		pw: <input name="pw" type ="password" 
+		placeholder="필수, 4~10글자" maxlength="10"><br>
+		pw획인: <input name="pwChk" type ="password" 
+		placeholder="필수, 4~10글자" maxlength="10"><br>
+		나이: <input name="age" maxlength="3" autocomplete="off"
+		placeholder="필수">
+		사진: <input name = "photo" type="file"><br> 
+		<button>ㄱㄱ</button>
+	</form>
+</body>
+</html>

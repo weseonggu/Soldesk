@@ -1,0 +1,7 @@
+package com.we.jan30.main;
+
+public class InsertMain {
+	public static void main(String[] args) {
+		
+	}
+}

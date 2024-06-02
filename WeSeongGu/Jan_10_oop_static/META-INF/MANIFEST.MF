@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Jan_10_oop_static
+Bundle-SymbolicName: Jan_10_oop_static
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: Jan.10.oop.static
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

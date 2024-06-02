@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.we.miniproject.sns.SnsMapper">
+
+	<select id="getSnsPost"
+		resultType="com.we.miniproject.sns.SnsPost"
+		parameterType="java.util.HashMap">
+		select bm_id,bm_photo, bs_no, bs_txt, bs_date,bs_writer
+		from (
+		select *
+		from(
+		select ROWNUM as rn, bs_no, bs_writer, bs_txt,
+		bs_date from (
+		select bs_no, bs_writer, bs_txt, bs_date from
+		bpbascp_sns
+		where
+		bs_writer like '%'||#{search}||'%' or bs_txt like
+		'%'||#{search}||'%'
+		order by bs_date
+		desc
+		)
+		)where rn
+		&gt;=#{start} and
+		rn&lt; =#{end}
+		),
+		(
+		select bm_id, bm_photo from
+		bpbascp_member
+		where bm_id
+		in(
+		select bs_writer from(
+		select ROWNUM as
+		rn, bs_no,
+		bs_writer, bs_txt,
+		bs_date from (
+		select bs_no, bs_writer,
+		bs_txt,
+		bs_date from bpbascp_sns
+		where bs_writer like '%'||#{search}||'%' or bs_txt like
+		'%'||#{search}||'%'
+		order by bs_date desc
+		)
+		)where rn &gt;=#{start} and
+		rn&lt; =#{end}
+		)
+		)
+		where
+		bm_id =
+		bs_writer
+	</select>
+
+
+	<insert id="writePost"
+		parameterType="com.we.miniproject.sns.SnsPost">
+		insert into bpbascp_sns
+		values(bpbascp_sns_seq.nextval,#{bs_writer},#{bs_txt},sysdate)
+	</insert>
+
+	<select id="getPostCount" resultType="java.lang.Integer">
+		select count(*) from
+		bpbascp_sns
+	</select>
+	<select id="searchPost" parameterType="java.util.HashMap"
+		resultType="java.lang.Integer">
+		select count(*) from bpbascp_sns
+		where bs_writer like
+		'%'||#{search}||'%' or bs_txt like '%'||#{search}||'%'
+	</select>
+
+	<delete id="deletePsot"
+		parameterType="com.we.miniproject.sns.SnsPost">
+		delete from bpbascp_sns where bs_no = #{bs_no}
+	</delete>
+
+	<select id="withdrawMember" resultType="java.lang.Integer"
+		parameterType="com.we.miniproject.member.Member">
+		select count(*) from bpbascp_sns where bs_writer =
+		#{bm_id}
+	</select>
+
+	<insert id="snsCommentWriter"
+		parameterType="com.we.miniproject.sns.SnsComment">
+		insert into bpbascp_sns_comment
+		values(bpbascp_comment_seq.nextval,
+		#{bsc_bs_no},#{bsc_txt},sysdate,#{bsc_writer})
+	</insert>
+
+	<select id="getSnsComments"
+		parameterType="java.util.HashMap"
+		resultType="com.we.miniproject.sns.SnsComment">
+		select * from bpbascp_sns_comment where bsc_bs_no in (
+		select bs_no
+		from (
+		select bs_no from(
+		select ROWNUM as rn, bs_no from (
+		select bs_no, bs_writer, bs_txt, bs_date from bpbascp_sns
+		where bs_writer like'%'||#{search}||'%' or bs_txt like'%'||#{search}||'%'
+		order by bs_date desc
+		)
+		)where rn &gt;=#{start} and rn &lt;=#{end}
+		)
+		)
+	</select>
+
+</mapper>

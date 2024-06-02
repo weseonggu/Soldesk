@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<script>
+    $(function(){
+        var paper = document.getElementById("p");// canvas는 최신이라 $()이게 잘 안먹힘
+        var pen = paper.getContext("2d");
+        // 크리스마스
+        setInterval(function(){        
+                pen.save();
+                pen.fillStyle = "#00000022";
+                pen.fillRect(0,0,600,600);
+
+                pen.shadowOffsetX=0;
+                pen.shadowOffsetY=0;
+                pen.shadowBlur=20;
+                pen.shadowColor="yellow";
+
+
+                var x = Math.random()*600;
+                var y =Math.random()*600;
+                var r= Math.random()*255;
+                var g= Math.random()*255;
+                var b= Math.random()*255;
+                pen.fillStyle = "rgb("+r+","+g+","+b+")";
+                pen.fillRect(x,y,30,30);
+                pen.restore();
+        },30);
+            
+
+                
+    });
+</script>
+<style>
+    #p{
+        border: 1px solid black;
+    }
+</style>
+</head>
+<body>
+    <canvas id ="p" width="600px" height="600px"></canvas>
+</body>
+</html>

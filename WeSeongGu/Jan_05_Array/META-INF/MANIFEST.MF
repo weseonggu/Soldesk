@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Jan_05
+Bundle-SymbolicName: Jan_05_Array
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: Jan.05
+Bundle-RequiredExecutionEnvironment: JavaSE-17

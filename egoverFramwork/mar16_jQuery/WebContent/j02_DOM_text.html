@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script
+  src="https://code.jquery.com/jquery-3.6.4.js"
+  integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+  crossorigin="anonymous"></script>
+  
+<script type="text/javascript">
+$(function(){
+
+	// text 변경
+	$("#b1").click(function(){
+		$("a").text("다음으로");
+	});
+
+
+	$("#b2").click(function(){
+		$("a").text("와");
+		setTimeout(function(){
+			$("a").text("와아");
+			setTimeout(function(){
+				$("a").text("와아~~~");				
+				setTimeout(function(){
+					$("a").text("와아~~~!!");
+						
+				},500);
+			},500);
+		},500);
+	});
+	// text 변경
+	$("#b3").click(function(){
+		$("a").html("<b>다음으로</b>"); // .text와는 다른점: .html안에 태그를 넣으면 태그로 인식해준다.
+	});
+	// 콘텐츠 데이터 보기
+	$("#b4").click(function(){
+		var txt = $("a").text();
+		alert(txt);
+	});
+});
+
+</script>
+</head>
+<body>
+	<a href="https://www.naver.com">네이버</a>
+	<hr>
+	<button id = "b1">버튼1</button><br>
+	<button id = "b2">버튼2</button><br>
+	<button id = "b3">버튼3</button><br>
+	<button id = "b4">버튼4</button><br>
+</body>
+</html>

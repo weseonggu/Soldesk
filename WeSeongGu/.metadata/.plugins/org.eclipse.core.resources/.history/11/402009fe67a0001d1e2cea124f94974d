@@ -1,0 +1,28 @@
+package com.we.jan30.main;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class InsertMain {
+	public static void main(String[] args) {
+String addr ="jdbc:oracle:thin:@192.168.0.170:1521:xe";
+		
+		Connection con = null;
+		try {
+			con = DriverManager.getConnection(addr,"we","3750");
+			System.out.println("연결 성공");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		try {
+			con.close();// 연결 종료
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

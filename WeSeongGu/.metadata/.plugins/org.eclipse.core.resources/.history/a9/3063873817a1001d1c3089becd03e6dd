@@ -1,0 +1,19 @@
+package com.we.jan31.main;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ConsoleScreen_v {
+	private Scanner k = new Scanner(System.in);
+	private ArrayList<Integer> arr = new ArrayList<>();
+	public ArrayList<Integer> inputNum() {
+		System.out.print("숫자: ");
+		int x = k.nextInt();
+		arr.add(x);
+		System.out.print("숫자: ");
+		int y = k.nextInt();
+		arr.add(y);
+		return arr;
+	}
+
+}

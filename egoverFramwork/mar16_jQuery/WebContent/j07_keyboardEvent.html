@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Document</title>
+<script
+src="https://code.jquery.com/jquery-3.6.4.js"
+integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+crossorigin="anonymous"></script>
+<script>
+    $(function(){
+        $("input").keydown(function(){
+            $("h1").text("keydown");
+        });
+        $("input").keyup(function(e){
+            $("h1").text("keyup: "+e.keyCode);//키의 아스키값
+        });
+
+        $("input").keyup(function(e){
+            if(e.keyCode==13){
+                var a =$(this).val();
+                alert(a);
+            }
+        });
+        $("input").keydown(function(e){
+            if(e.keyCode==65){
+                return false;
+            }
+        });
+        var x=0;
+        var y=0;
+        $(document).keydown(function(e){
+            if(e.keyCode==40){//아래
+                y+=10;
+                $("img").css("left",x+"px");
+                $("img").css("top",y+"px");
+            }else if(e.keyCode==37){//왼쪽
+                x-=10;
+                $("img").css("left",x+"px");
+                $("img").css("top",y+"px");
+            }else if(e.keyCode==38){//위
+                y-=10;
+                $("img").css("left",x+"px");
+                $("img").css("top",y+"px");
+            }else if(e.keyCode==39){//오른쪽
+                x+=10;
+                $("img").css("left",x+"px");
+                $("img").css("top",y+"px");
+            }   
+        });
+
+
+
+
+
+
+
+    });
+</script>
+<style>
+    img{
+        position: fixed;
+    }
+</style>
+</head>
+<body>
+    <img src="hero_walk_01.png">
+    <input>
+    <hr>
+    <h1>ㅋ</h1>
+</body>
+</html>

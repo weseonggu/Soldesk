@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<script>
+    $(function(){
+        var paper = document.getElementById("p");// canvas는 최신이라 $()이게 잘 안먹힘
+            var pen = paper.getContext("2d");
+            pen.fillRect(10,20,30,30);
+            pen.fillStyle = "#ff0f00";
+            pen.fillRect(40,50,30,30);
+            pen.fillStyle = "#162157";
+            pen.fillRect(70,80,30,30);
+
+            //선 그리기
+            pen.strokeStyle = "#123456";// 선색
+            pen.lineWidth = 5;// 선 두께
+            pen.beginPath();
+            pen.moveTo(100, 110);
+            pen.lineTo(200,210);
+            pen.closePath();
+            pen.stroke();
+
+            // 이미지 파일 그리기
+            var android = new Image();
+            android.src = "android_focused.png";
+            android.onload = function(){// 그림 파일 다가져오고 나서(만역 서버에서 가저온다면 시간이 걸리기 때문데)
+                // pen.drawImage(android,200,210);
+                pen.drawImage(android,200,210,100,100);// 그림 사이즈 조절
+
+            };
+
+            pen.save();// 펜의 세팅을 저장(그림자 세팅이 없음을 저장함)
+
+            //그림자 넣기 (이미지 onload가 완료대기 전에 실행되서 이미지에도 그림자 설정이 없는데 이미지에도 그림자 설정이 들어감)
+            pen.shadowOffsetX = 5;
+            pen.shadowOffsetY = 15;
+            pen.shadowBlur =10;
+            pen.shadowColor ="red";
+            pen.fillStyle = "#ff0f89";
+            pen.fillRect(300,10,50,50);
+
+            pen.restore();// 저장된거 불러오기(그림자 셋팅이 없는 펜 설저을 가져와서 이미지를 그림)
+
+                
+    });
+</script>
+<style>
+    #p{
+        border: 1px solid black;
+    }
+</style>
+</head>
+<body>
+    <canvas id ="p" width="600px" height="600px"></canvas>
+</body>
+</html>

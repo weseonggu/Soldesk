@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@font-face {
+  font-family : 'font';
+  src : url(font1.TTF)
+}
+a {
+	text-decoration: none;
+}
+#indexBody{
+	width: 99%;
+	position: relative;
+	overflow: auto;
+	background-color: #112236;
+	
+
+}
+#backImg{
+	width:100%;
+	position: fixed;
+	left: 0px;
+}
+#backImg img{
+	width: 100%;
+	
+}
+
+#indexBody #titleBox{
+	position: fixed;
+	top:0px;
+	left:0px;
+	width: 100%;
+	z-index: 10;
+}
+
+
+#indexBody #titleBox #title {
+	width: 100%;
+	padding-bottom: 3px;
+}
+
+#indexBody #titleBox #title h1 {
+	width: 80%;
+	margin: auto;
+	background-color: #93c5f5;
+	border-radius: 10px;
+	padding: 8px;
+	font-family: 'font';
+}
+
+#indexBody #titleBox #menu {
+	background-color: #ddecfd;
+	margin-bottom: 2px;
+	padding: 8px;
+	overflow: auto;
+	display: none;
+}
+#contents{
+	width: 100%;
+	position: absolute;
+	top:200px;
+	left:0px;
+	z-index: 5;
+}
+

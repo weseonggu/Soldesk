@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<script>
+    $(function(){
+        //https://api.openweathermap.org/data/2.5/weather?q=seoul&appid=baff8f3c6cbc28a4024e336599de28c4&units=metric&lang=kr
+
+        $.getJSON("https://api.openweathermap.org/data/2.5/weather?q=seoul&appid=baff8f3c6cbc28a4024e336599de28c4&units=metric&lang=kr", function(data){
+            // alert( data.weather[0].description);
+            // alert( data.weather[0].icon);
+            // alert( data.main.temp);
+            // alert( data.main.humidity);
+            $("#w").text(data.weather[0].description);
+            var ad ="https://openweathermap.org/img/wn/"+data.weather[0].icon+"@2x.png";
+            $("#i").attr("src",ad);
+            $("#t").text(data.main.temp);
+            $("#h").text(data.main.humidity);
+        });
+
+    });
+</script>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td id = "w"></td>
+        </tr>
+        <tr>
+            <td>
+                <img id = "i">
+            </td>
+        </tr>
+        <tr>
+            <td id = "t">
+                
+            </td>
+        </tr>
+        <tr>
+            <td id = "h">
+                
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

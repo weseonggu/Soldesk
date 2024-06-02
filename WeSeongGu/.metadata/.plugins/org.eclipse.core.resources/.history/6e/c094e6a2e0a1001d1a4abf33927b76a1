@@ -1,0 +1,37 @@
+package com.we.main;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.util.ArrayList;
+
+import com.we.db.manager.DBManager;
+
+public class InsertDustDataToDB {
+	public static void insertData(ArrayList<DustMeasurement> arr) {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		try {
+			con = DBManager.dbConnect("jdbc:oracle:thin:@192.168.0.170:1521:xe", "we", "3750");
+			String sql = "insert into feb01_weather values" + "(to_date(?,'YYYYMMDDHH24MI'),?,?,?,?,?,?)";
+			pstmt = con.prepareStatement(sql);
+			for (DustMeasurement d : arr) {
+				pstmt.setString(1, d.getMSRDT());
+				pstmt.setString(2, d.getMSRRGN_NM());
+				pstmt.setString(3, d.getMSRSTE_NM());
+				pstmt.setInt(4, d.getPM10());
+				pstmt.setInt(5, d.getPm25());
+				pstmt.setDouble(6, d.getO3());
+				pstmt.setString(7, d.getIDEX_NM());
+				if (pstmt.executeUpdate() == 1) {
+					System.out.println("성공");
+				} else {
+					System.out.println("실패");
+				}
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		} finally {
+			DBManager.dbClosed(con, pstmt, null);
+		}
+	}
+}

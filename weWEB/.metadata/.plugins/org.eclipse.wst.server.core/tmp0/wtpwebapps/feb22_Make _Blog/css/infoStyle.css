@@ -1,0 +1,40 @@
+@charset "EUC-KR";
+#infoPage{
+	width:500px;
+	margin: auto;
+}
+#infoPage div{
+	display:block;
+	width: 500px;
+	margin: auto;
+}
+#qwer{
+	width: 80%;
+	display: block;
+	margin: auto;
+}
+#infoPage div form{
+	width: 80%;
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+#infoPage div form input:not(:last-of-type){
+	width: 95%;
+	height: 40px;
+	border: 3px solid black;
+	margin-bottom: 8px;
+}
+#infoPage div form button{
+	margin-top: 8px;
+	width:100%;
+}
+#infoPage div button {
+	text-align:center;
+	width:80%;
+	height:40px;
+	margin-top: 8px;
+	display:block;
+	margin: auto;
+	border: 3px solid black;
+}

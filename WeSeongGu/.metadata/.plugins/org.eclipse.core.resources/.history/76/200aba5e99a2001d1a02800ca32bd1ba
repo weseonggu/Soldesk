@@ -1,0 +1,15 @@
+package com.we.main;
+
+public class SnackDAO {
+	
+	private static final SnackDAO adao =new SnackDAO();
+	
+	private SnackDAO() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static SnackDAO getAdao() {
+		return adao;
+	}
+	
+}

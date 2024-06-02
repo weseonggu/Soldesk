@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src = "js/weValidCheck.js"></script>
+<script type="text/javascript" src = "js/inputCheck.js"></script>
+<link rel="stylesheet" href="css/inputStyle.css">
+<link >
+</head>
+<body>
+	<form action ="HomeController" onsubmit = "return check();"
+		name = "fff" enctype="multipart/form-data" method="post">
+		<table>
+			<tr>
+				<td align="center" colspan="2"><h2>비만도 검사</h2></td>
+			</tr>
+
+			<tr>
+				<td align="center">이름</td>
+				<td align="center"><input name="nnn" placeholder="필수"></td>
+			</tr>
+
+			<tr>
+				<td align="center">키</td>
+				<td align="center"><input name="hhh" placeholder="필수,cm단위"></td>
+			</tr>
+
+			<tr>
+				<td align="center">몸무게</td>
+				<td align="center"><input name="www" placeholder="필수"></td>
+			</tr>
+
+			<tr>
+				<td align="center">사진</td>
+				<td align="center"><input type="file" name="photo"></td>
+			</tr>
+			
+			<tr>
+				<td colspan="2" align="center">
+					<button>결과 보기</button>
+					<button>회원 가입</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

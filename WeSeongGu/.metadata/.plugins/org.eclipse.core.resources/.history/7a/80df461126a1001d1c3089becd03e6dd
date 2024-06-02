@@ -1,0 +1,11 @@
+package com.we.jan31.main;
+
+import java.util.ArrayList;
+
+public class Calculator_m {
+	public static int name(ArrayList<Integer> ar) {
+		int x = ar.get(0);
+		int y = ar.get(1);
+		return x+y;
+	}
+}
